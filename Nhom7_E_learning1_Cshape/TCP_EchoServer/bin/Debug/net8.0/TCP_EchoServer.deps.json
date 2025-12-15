@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TCP_EchoServer/1.0.0": {
+        "runtime": {
+          "TCP_EchoServer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TCP_EchoServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

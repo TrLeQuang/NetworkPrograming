@@ -1,0 +1,15 @@
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\bin\Debug\net8.0\TCP_EchoServer.exe
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\bin\Debug\net8.0\TCP_EchoServer.deps.json
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\bin\Debug\net8.0\TCP_EchoServer.runtimeconfig.json
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\bin\Debug\net8.0\TCP_EchoServer.dll
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\bin\Debug\net8.0\TCP_EchoServer.pdb
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\obj\Debug\net8.0\TCP_EchoServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\obj\Debug\net8.0\TCP_EchoServer.AssemblyInfoInputs.cache
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\obj\Debug\net8.0\TCP_EchoServer.AssemblyInfo.cs
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\obj\Debug\net8.0\TCP_EchoServer.csproj.CoreCompileInputs.cache
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\obj\Debug\net8.0\TCP_EchoServer.sourcelink.json
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\obj\Debug\net8.0\TCP_EchoServer.dll
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\obj\Debug\net8.0\refint\TCP_EchoServer.dll
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\obj\Debug\net8.0\TCP_EchoServer.pdb
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\obj\Debug\net8.0\TCP_EchoServer.genruntimeconfig.cache
+D:\CODEWEB\Nhom7_E_learning1_Cshape\E_learning1_ToiUuTCP\obj\Debug\net8.0\ref\TCP_EchoServer.dll
