@@ -1,0 +1,3 @@
+﻿  TCP Client.cpp
+F:\Lập trình mạng\TCP Project\TCP Client\TCP Client.cpp(40,27): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  TCP Client.vcxproj -> F:\Lập trình mạng\TCP Project\x64\Debug\TCP Client.exe
