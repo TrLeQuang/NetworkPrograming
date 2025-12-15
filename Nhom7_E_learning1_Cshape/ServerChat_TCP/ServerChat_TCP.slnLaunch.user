@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "LoadTest\\LoadTest.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "BlockingServer_TCP\\BlockingServer_TCP.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
