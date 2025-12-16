@@ -1,0 +1,9 @@
+@echo off
+echo Dang khoi dong TCP Server...
+start tcp_server.exe
+
+echo Doi 2 giay de Server san sang...
+timeout /t 2 /nobreak > nul
+
+echo Dang khoi dong TCP Client...
+start client.exe
