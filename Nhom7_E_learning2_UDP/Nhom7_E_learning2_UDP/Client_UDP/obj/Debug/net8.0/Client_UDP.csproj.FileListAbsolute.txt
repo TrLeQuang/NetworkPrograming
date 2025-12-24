@@ -1,0 +1,15 @@
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\bin\Debug\net8.0\Client_UDP.exe
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\bin\Debug\net8.0\Client_UDP.deps.json
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\bin\Debug\net8.0\Client_UDP.runtimeconfig.json
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\bin\Debug\net8.0\Client_UDP.dll
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\bin\Debug\net8.0\Client_UDP.pdb
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\obj\Debug\net8.0\Client_UDP.GeneratedMSBuildEditorConfig.editorconfig
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\obj\Debug\net8.0\Client_UDP.AssemblyInfoInputs.cache
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\obj\Debug\net8.0\Client_UDP.AssemblyInfo.cs
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\obj\Debug\net8.0\Client_UDP.csproj.CoreCompileInputs.cache
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\obj\Debug\net8.0\Client_UDP.sourcelink.json
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\obj\Debug\net8.0\Client_UDP.dll
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\obj\Debug\net8.0\refint\Client_UDP.dll
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\obj\Debug\net8.0\Client_UDP.pdb
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\obj\Debug\net8.0\Client_UDP.genruntimeconfig.cache
+D:\CODEWEB\Nhom7_E_learning2_UDP\Client_UDP\obj\Debug\net8.0\ref\Client_UDP.dll
