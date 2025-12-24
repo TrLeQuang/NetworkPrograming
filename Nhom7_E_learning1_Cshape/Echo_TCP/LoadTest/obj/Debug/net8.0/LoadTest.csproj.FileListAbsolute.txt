@@ -1,0 +1,15 @@
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\bin\Debug\net8.0\LoadTest.exe
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\bin\Debug\net8.0\LoadTest.deps.json
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\bin\Debug\net8.0\LoadTest.runtimeconfig.json
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\bin\Debug\net8.0\LoadTest.dll
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\bin\Debug\net8.0\LoadTest.pdb
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\obj\Debug\net8.0\LoadTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\obj\Debug\net8.0\LoadTest.AssemblyInfoInputs.cache
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\obj\Debug\net8.0\LoadTest.AssemblyInfo.cs
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\obj\Debug\net8.0\LoadTest.csproj.CoreCompileInputs.cache
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\obj\Debug\net8.0\LoadTest.sourcelink.json
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\obj\Debug\net8.0\LoadTest.dll
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\obj\Debug\net8.0\refint\LoadTest.dll
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\obj\Debug\net8.0\LoadTest.pdb
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\obj\Debug\net8.0\LoadTest.genruntimeconfig.cache
+D:\CODEWEB\Nhom7_E_learning1_Cshape\LoadTest\obj\Debug\net8.0\ref\LoadTest.dll
