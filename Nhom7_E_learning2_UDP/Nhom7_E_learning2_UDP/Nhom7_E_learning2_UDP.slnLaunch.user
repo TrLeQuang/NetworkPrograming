@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Nhom7_E_learning2_UDP\\Server_UDP.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Client_UDP\\Client_UDP.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
