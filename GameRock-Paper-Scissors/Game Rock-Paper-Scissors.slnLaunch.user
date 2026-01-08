@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Game Rock-Paper-Scissors\\RockPaperScissorsServer.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RockPaperScissorsClient\\RockPaperScissorsClient.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
