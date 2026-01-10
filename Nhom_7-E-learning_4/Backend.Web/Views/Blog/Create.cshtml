@@ -1,0 +1,39 @@
+﻿@model Backend.Web.Models.CreateBlogRequest
+@{
+    ViewData["Title"] = "Create Blog";
+}
+
+<h2>Create Blog</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+<form method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input class="form-control" asp-for="Title" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Content</label>
+        <textarea class="form-control" asp-for="Content" rows="8"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">ThumbnailUrl (optional)</label>
+        <input class="form-control" asp-for="ThumbnailUrl" />
+        <small class="text-muted">Hoặc upload file bên dưới.</small>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Upload Thumbnail</label>
+        <input type="file" name="thumbnailFile" class="form-control" />
+    </div>
+
+    <button class="btn btn-primary">Save</button>
+    <a class="btn btn-secondary" href="/Blog">Back</a>
+</form>

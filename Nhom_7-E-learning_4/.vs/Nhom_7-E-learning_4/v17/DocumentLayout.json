@@ -1,0 +1,588 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\views\\blog\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\views\\blog\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\views\\blog\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\views\\blog\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\views\\blog\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\views\\blog\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\models\\blogmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\models\\blogmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\services\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\backend.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\backend.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\views\\auth\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\views\\auth\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\models\\authmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\models\\authmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\controllers\\uploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\dtos\\blog\\updateblogrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\dtos\\blog\\updateblogrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\dtos\\blog\\createblogrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\dtos\\blog\\createblogrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\controllers\\dbtestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\controllers\\dbtestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\data\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\data\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\backend.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\backend.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.web\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7F5F2F5-CE66-43DB-B2BE-1E37B5138840}|Backend.Web\\Backend.Web.csproj|solutionrelative:backend.web\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\services\\auth\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\services\\auth\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\services\\auth\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\dtos\\auth\\loginreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\dtos\\auth\\loginreponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\dtos\\auth\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\dtos\\auth\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\utils\\apireponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\utils\\apireponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|f:\\l\u1EADp tr\u00ECnh m\u1EA1ng\\nhom_7-e-learning_4\\backend.api\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BFE60EE-533F-4D66-AAF8-AB24D3821B20}|Backend.API\\Backend.API.csproj|solutionrelative:backend.api\\controllers\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "Backend.Web\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "Backend.Web\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T03:14:58.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "Backend.Web\\Controllers\\BlogController.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "Backend.Web\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAowKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T03:13:43.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApiClient.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Services\\ApiClient.cs",
+              "RelativeDocumentMoniker": "Backend.Web\\Services\\ApiClient.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Services\\ApiClient.cs",
+              "RelativeToolTip": "Backend.Web\\Services\\ApiClient.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:29:16.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Program.cs",
+              "RelativeDocumentMoniker": "Backend.Web\\Program.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Program.cs",
+              "RelativeToolTip": "Backend.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:30:58.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BlogModels.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Models\\BlogModels.cs",
+              "RelativeDocumentMoniker": "Backend.Web\\Models\\BlogModels.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Models\\BlogModels.cs",
+              "RelativeToolTip": "Backend.Web\\Models\\BlogModels.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAswCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T11:51:21.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Blog\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Backend.Web\\Views\\Blog\\Detail.cshtml",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Blog\\Detail.cshtml",
+              "RelativeToolTip": "Backend.Web\\Views\\Blog\\Detail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T03:17:41.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Program.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Program.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Program.cs",
+              "RelativeToolTip": "Backend.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T07:15:02.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Backend.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Backend.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAswD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T09:36:08.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Blog\\Create.cshtml",
+              "RelativeDocumentMoniker": "Backend.Web\\Views\\Blog\\Create.cshtml",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Blog\\Create.cshtml",
+              "RelativeToolTip": "Backend.Web\\Views\\Blog\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T03:16:16.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Blog\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Backend.Web\\Views\\Blog\\Edit.cshtml",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Blog\\Edit.cshtml",
+              "RelativeToolTip": "Backend.Web\\Views\\Blog\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-09T03:16:44.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Backend.Web",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Backend.Web.csproj",
+              "RelativeDocumentMoniker": "Backend.Web\\Backend.Web.csproj",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Backend.Web.csproj",
+              "RelativeToolTip": "Backend.Web\\Backend.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-08T10:11:36.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Auth\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Backend.Web\\Views\\Auth\\Profile.cshtml",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Auth\\Profile.cshtml",
+              "RelativeToolTip": "Backend.Web\\Views\\Auth\\Profile.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T09:35:46.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BlogRepository.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Repositories\\BlogRepository.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Repositories\\BlogRepository.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Repositories\\BlogRepository.cs",
+              "RelativeToolTip": "Backend.API\\Repositories\\BlogRepository.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAASwDsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T10:30:05.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Backend.Web\\appsettings.json",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\appsettings.json",
+              "RelativeToolTip": "Backend.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-08T07:34:43.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AuthModels.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Models\\AuthModels.cs",
+              "RelativeDocumentMoniker": "Backend.Web\\Models\\AuthModels.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Models\\AuthModels.cs",
+              "RelativeToolTip": "Backend.Web\\Models\\AuthModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:27:51.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Backend.Web\\Controllers\\AuthController.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Backend.Web\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAcwJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:34:00.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Backend.API\\appsettings.json",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\appsettings.json",
+              "RelativeToolTip": "Backend.API\\appsettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-08T07:18:04.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "Backend.Web\\Models\\ApiResponse.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "Backend.Web\\Models\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T14:06:43.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CreateBlogRequest.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\DTOs\\Blog\\CreateBlogRequest.cs",
+              "RelativeDocumentMoniker": "Backend.API\\DTOs\\Blog\\CreateBlogRequest.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\DTOs\\Blog\\CreateBlogRequest.cs",
+              "RelativeToolTip": "Backend.API\\DTOs\\Blog\\CreateBlogRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T10:28:05.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UploadController.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Controllers\\UploadController.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Controllers\\UploadController.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Controllers\\UploadController.cs",
+              "RelativeToolTip": "Backend.API\\Controllers\\UploadController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T11:42:08.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UpdateBlogRequest.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\DTOs\\Blog\\UpdateBlogRequest.cs",
+              "RelativeDocumentMoniker": "Backend.API\\DTOs\\Blog\\UpdateBlogRequest.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\DTOs\\Blog\\UpdateBlogRequest.cs",
+              "RelativeToolTip": "Backend.API\\DTOs\\Blog\\UpdateBlogRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T10:28:37.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Controllers\\BlogController.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "Backend.API\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwD4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T10:32:04.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DbTestController.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Controllers\\DbTestController.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Controllers\\DbTestController.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Controllers\\DbTestController.cs",
+              "RelativeToolTip": "Backend.API\\Controllers\\DbTestController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:52:13.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Backend.API.csproj",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Backend.API.csproj",
+              "RelativeDocumentMoniker": "Backend.API\\Backend.API.csproj",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Backend.API.csproj",
+              "RelativeToolTip": "Backend.API\\Backend.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-08T07:50:18.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DbConnectionFactory.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Data\\DbConnectionFactory.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Data\\DbConnectionFactory.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Data\\DbConnectionFactory.cs",
+              "RelativeToolTip": "Backend.API\\Data\\DbConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:54:40.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Backend.Web\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.Web\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Backend.Web\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T09:35:13.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "LoginReponse.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\DTOs\\Auth\\LoginReponse.cs",
+              "RelativeDocumentMoniker": "Backend.API\\DTOs\\Auth\\LoginReponse.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\DTOs\\Auth\\LoginReponse.cs",
+              "RelativeToolTip": "Backend.API\\DTOs\\Auth\\LoginReponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:11:49.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\DTOs\\Auth\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Backend.API\\DTOs\\Auth\\LoginRequest.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\DTOs\\Auth\\LoginRequest.cs",
+              "RelativeToolTip": "Backend.API\\DTOs\\Auth\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:11:06.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Controllers\\AuthController.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Backend.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:15:01.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "JWTTokenService.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Services\\Auth\\JWTTokenService.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Services\\Auth\\JWTTokenService.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Services\\Auth\\JWTTokenService.cs",
+              "RelativeToolTip": "Backend.API\\Services\\Auth\\JWTTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T08:00:15.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Services\\Auth\\AuthService.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Services\\Auth\\AuthService.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Services\\Auth\\AuthService.cs",
+              "RelativeToolTip": "Backend.API\\Services\\Auth\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T07:59:23.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ApiReponse.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Utils\\ApiReponse.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Utils\\ApiReponse.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Utils\\ApiReponse.cs",
+              "RelativeToolTip": "Backend.API\\Utils\\ApiReponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:10:16.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "HealthController.cs",
+              "DocumentMoniker": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Controllers\\HealthController.cs",
+              "RelativeDocumentMoniker": "Backend.API\\Controllers\\HealthController.cs",
+              "ToolTip": "F:\\L\u1EADp tr\u00ECnh m\u1EA1ng\\Nhom_7-E-learning_4\\Backend.API\\Controllers\\HealthController.cs",
+              "RelativeToolTip": "Backend.API\\Controllers\\HealthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T14:19:31.99Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+﻿@model Backend.Web.Models.BlogDetail
+@{
+    ViewData["Title"] = "Blog Details";
+}
+
+<h2>Blog Details</h2>
+
+<table class="table table-bordered">
+    <tr><th style="width:160px;">Id</th><td>@Model.Id</td></tr>
+    <tr><th>Title</th><td>@Model.Title</td></tr>
+    <tr><th>Author</th><td>@Model.AuthorName</td></tr>
+    <tr><th>CreatedAt</th><td>@Model.CreatedAt</td></tr>
+    <tr><th>ThumbnailUrl</th><td>@Model.ThumbnailUrl</td></tr>
+    <tr><th>Content</th><td><pre style="white-space:pre-wrap">@Model.Content</pre></td></tr>
+</table>
+
+<a class="btn btn-secondary" href="/Blog">Back</a>
+<a class="btn btn-warning" href="/Blog/Edit/@Model.Id">Edit</a>

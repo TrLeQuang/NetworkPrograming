@@ -1,0 +1,257 @@
+{
+	"info": {
+		"_postman_id": "c44579cf-fab4-4afc-837c-069f2418b0e7",
+		"name": "Backend API Test",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51384633",
+		"_collection_link": "https://tranquang2005kg-7612712.postman.co/workspace/Quang-Tr%E1%BA%A7n's-Workspace~c2aa996d-2ab1-432f-81cc-71756d3dc729/collection/51384633-c44579cf-fab4-4afc-837c-069f2418b0e7?action=share&source=collection_link&creator=51384633"
+	},
+	"item": [
+		{
+			"name": "AUTH - LOGIN",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const res = pm.response.json();\r",
+							"\r",
+							"if (res.success && res.data && res.data.accessToken) {\r",
+							"    pm.environment.set(\"token\", res.data.accessToken);\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"admin@gmail.com\",\r\n  \"password\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7092/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AUTH - ME",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7092/api/auth/me",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"api",
+						"auth",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BLOG - CREATE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Postman Blog\",\r\n  \"content\": \"Created via Postman\",\r\n  \"thumbnailUrl\": null\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7092/api/blogs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"api",
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BLOG - GET LIST (Public)",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7092/api/blogs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"api",
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BLOG - GET LIST (Private)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7092/api/blogs",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"api",
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BLOG - UPDATE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Bai viet 2\",\r\n    \"thumbnailUrl\": \"https://example.com/img1.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7092/api/blogs/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"api",
+						"blogs",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BLOG - DELETE",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7092/api/blogs/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"api",
+						"blogs",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

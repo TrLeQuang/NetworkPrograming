@@ -1,0 +1,28 @@
+﻿@model Backend.Web.Models.LoginRequest
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h2>Login</h2>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}
+
+<form method="post">
+    <div>
+        <label>Email</label><br />
+        <input asp-for="Email" />
+    </div>
+    <div style="margin-top:10px">
+        <label>Password</label><br />
+        <input asp-for="Password" type="password" />
+    </div>
+
+    <button style="margin-top:15px" type="submit">Login</button>
+</form>
+
+<p style="margin-top:10px">
+    Test: admin@gmail.com / 123456
+</p>

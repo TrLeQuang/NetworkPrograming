@@ -1,0 +1,39 @@
+﻿@model Backend.Web.Models.UpdateBlogRequest
+@{
+    ViewData["Title"] = "Edit Blog";
+    var id = (int)(ViewBag.BlogId ?? 0);
+}
+
+<h2>Edit Blog</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+<form method="post" enctype="multipart/form-data" action="/Blog/Edit/@id">
+    @Html.AntiForgeryToken()
+
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input class="form-control" asp-for="Title" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Content</label>
+        <textarea class="form-control" asp-for="Content" rows="8"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">ThumbnailUrl</label>
+        <input class="form-control" asp-for="ThumbnailUrl" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Upload new Thumbnail</label>
+        <input type="file" name="thumbnailFile" class="form-control" />
+    </div>
+
+    <button class="btn btn-primary">Save</button>
+    <a class="btn btn-secondary" href="/Blog">Back</a>
+</form>

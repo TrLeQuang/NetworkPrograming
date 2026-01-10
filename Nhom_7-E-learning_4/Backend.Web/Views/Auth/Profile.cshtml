@@ -1,0 +1,38 @@
+﻿@model Backend.Web.Models.UserProfile
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h2>Profile</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+@if (Model == null)
+{
+    <p>No profile data.</p>
+}
+else
+{
+    <dl class="row">
+        <dt class="col-sm-2">Id</dt>
+        <dd class="col-sm-10">@Model.Id</dd>
+
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Model.Email</dd>
+
+        <dt class="col-sm-2">Full Name</dt>
+        <dd class="col-sm-10">@Model.FullName</dd>
+
+        <dt class="col-sm-2">Role</dt>
+        <dd class="col-sm-10">@Model.Role</dd>
+    </dl>
+}
+
+<form asp-action="Logout" method="post">
+    @Html.AntiForgeryToken()
+    <button class="btn btn-danger" type="submit">Logout</button>
+</form>
