@@ -462,7 +462,7 @@ namespace RockPaperScissorsClient
         }
     }
 
-    static class Program
+    static class Client
     {
         [STAThread]
         static void Main()

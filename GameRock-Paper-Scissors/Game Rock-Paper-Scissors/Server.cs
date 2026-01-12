@@ -14,6 +14,7 @@ namespace RockPaperScissorsServer
     {
         private TcpListener server;
         private List<ClientHandler> clients = new List<ClientHandler>();
+        private List<GamePair> gamePairs = new List<GamePair>();
         private bool isRunning = false;
         private TextBox txtLog;
         private Button btnStart;
@@ -130,6 +131,7 @@ namespace RockPaperScissorsServer
                 client.Disconnect();
             }
             clients.Clear();
+            gamePairs.Clear();
 
             UpdateStatus("Server Status: Stopped", Color.Red);
             UpdatePlayerCount();
@@ -153,6 +155,10 @@ namespace RockPaperScissorsServer
                     clientThread.Start();
 
                     LogMessage($"→ New client connected (ID: {handler.ClientId})");
+
+                    // Tự động ghép cặp với client đang chờ
+                    TryPairClients(handler);
+
                     UpdatePlayerCount();
                     BroadcastPlayerCount();
                 }
@@ -160,43 +166,102 @@ namespace RockPaperScissorsServer
             }
         }
 
+        private void TryPairClients(ClientHandler newClient)
+        {
+            // Tìm client đang chờ ghép cặp (chưa có partner)
+            var waitingClient = clients.FirstOrDefault(c => c != newClient && c.Partner == null);
+
+            if (waitingClient != null)
+            {
+                // Ghép cặp hai client
+                GamePair pair = new GamePair(waitingClient, newClient);
+                gamePairs.Add(pair);
+
+                waitingClient.Partner = newClient;
+                newClient.Partner = waitingClient;
+
+                waitingClient.SendMessage("OPPONENT_STATUS|PAIRED");
+                newClient.SendMessage("OPPONENT_STATUS|PAIRED");
+
+                LogMessage($"🔗 Paired: Player {waitingClient.ClientId} ↔ Player {newClient.ClientId}");
+            }
+            else
+            {
+                // Không có ai chờ, client này sẽ chờ người tiếp theo
+                newClient.SendMessage("WAITING|Waiting for another player to join...");
+                LogMessage($"⏳ Player {newClient.ClientId} is waiting for a partner...");
+            }
+        }
+
         public void RemoveClient(ClientHandler client)
         {
             clients.Remove(client);
+
+            // Xóa cặp game nếu có
+            var pair = gamePairs.FirstOrDefault(p => p.Player1 == client || p.Player2 == client);
+            if (pair != null)
+            {
+                gamePairs.Remove(pair);
+
+                // Thông báo cho partner rằng đối thủ đã disconnect
+                var partner = client.Partner;
+                if (partner != null)
+                {
+                    partner.Partner = null;
+                    partner.SendMessage("OPPONENT_STATUS|DISCONNECTED");
+                    LogMessage($"⚠ Player {partner.ClientId}'s opponent disconnected");
+                }
+            }
+
             LogMessage($"← Client disconnected (ID: {client.ClientId})");
             UpdatePlayerCount();
             BroadcastPlayerCount();
         }
 
-        public void ProcessGame(ClientHandler player1, string choice1)
+        public void ProcessGame(ClientHandler player, string choice)
         {
-            // Tìm người chơi đang chờ (không phải chính mình)
-            var waitingPlayer = clients.FirstOrDefault(c => c != player1 && c.IsWaiting);
-
-            if (waitingPlayer != null)
+            if (player.Partner == null)
             {
-                string choice2 = waitingPlayer.Choice;
-                string result = DetermineWinner(choice1, choice2);
+                player.SendMessage("WAITING|You don't have a partner yet. Waiting for another player...");
+                LogMessage($"⚠ Player {player.ClientId} tried to play without a partner");
+                return;
+            }
 
-                // Gửi kết quả cho cả hai người chơi
-                player1.SendMessage($"RESULT|{result}|You: {choice1}, Opponent: {choice2}");
-                waitingPlayer.SendMessage($"RESULT|{GetOppositeResult(result)}|You: {choice2}, Opponent: {choice1}");
+            var partner = player.Partner;
 
-                player1.IsWaiting = false;
-                waitingPlayer.IsWaiting = false;
+            // Lưu lựa chọn của player hiện tại
+            player.CurrentChoice = choice;
+            player.HasMadeChoice = true;
 
-                LogMessage($"⚔ Game: Player {player1.ClientId} ({choice1}) vs Player {waitingPlayer.ClientId} ({choice2}) → {result}");
+            LogMessage($"→ Player {player.ClientId} chose: {choice}");
+
+            // Kiểm tra xem partner đã chọn chưa
+            if (partner.HasMadeChoice)
+            {
+                // Cả hai đã chọn, xử lý kết quả
+                string choice1 = player.CurrentChoice;
+                string choice2 = partner.CurrentChoice;
+
+                string result1 = DetermineWinner(choice1, choice2);
+                string result2 = GetOppositeResult(result1);
+
+                player.SendMessage($"RESULT|{result1}|You: {choice1}, Opponent: {choice2}");
+                partner.SendMessage($"RESULT|{result2}|You: {choice2}, Opponent: {choice1}");
+
+                LogMessage($"⚔ Game: Player {player.ClientId} ({choice1}) vs Player {partner.ClientId} ({choice2}) → Result: {result1}/{result2}");
+
+                // Reset trạng thái cho lượt tiếp theo
+                player.HasMadeChoice = false;
+                player.CurrentChoice = null;
+                partner.HasMadeChoice = false;
+                partner.CurrentChoice = null;
             }
             else
             {
-                // Không có đối thủ, đặt vào chế độ chờ
-                player1.IsWaiting = true;
-                player1.Choice = choice1;
-                player1.SendMessage("WAITING|Waiting for opponent to join...");
-                LogMessage($"⏳ Player {player1.ClientId} is waiting with choice: {choice1}");
-
-                // Thông báo cho người chơi khác (nếu có) rằng có người đang chờ
-                BroadcastOpponentStatus();
+                // Partner chưa chọn, thông báo đợi
+                player.SendMessage("WAITING|Waiting for your opponent to make a choice...");
+                partner.SendMessage("OPPONENT_STATUS|WAITING");
+                LogMessage($"⏳ Player {player.ClientId} is waiting for Player {partner.ClientId}");
             }
         }
 
@@ -206,21 +271,6 @@ namespace RockPaperScissorsServer
             foreach (var client in clients.ToList())
             {
                 client.SendMessage(message);
-            }
-        }
-
-        private void BroadcastOpponentStatus()
-        {
-            var waitingPlayer = clients.FirstOrDefault(c => c.IsWaiting);
-            bool hasWaiting = waitingPlayer != null;
-
-            string message = $"OPPONENT_STATUS|{(hasWaiting ? "WAITING" : "NONE")}";
-            foreach (var client in clients.ToList())
-            {
-                if (client != waitingPlayer) // Không gửi cho chính người đang chờ
-                {
-                    client.SendMessage(message);
-                }
             }
         }
 
@@ -274,7 +324,7 @@ namespace RockPaperScissorsServer
             }
             else
             {
-                lblPlayerCount.Text = $"Connected Players: {clients.Count}";
+                lblPlayerCount.Text = $"Connected Players: {clients.Count} (Pairs: {gamePairs.Count})";
             }
         }
 
@@ -288,13 +338,26 @@ namespace RockPaperScissorsServer
         }
     }
 
+    public class GamePair
+    {
+        public ClientHandler Player1 { get; set; }
+        public ClientHandler Player2 { get; set; }
+
+        public GamePair(ClientHandler player1, ClientHandler player2)
+        {
+            Player1 = player1;
+            Player2 = player2;
+        }
+    }
+
     public class ClientHandler
     {
         private TcpClient client;
         private NetworkStream stream;
         private ServerForm server;
-        public bool IsWaiting { get; set; }
-        public string Choice { get; set; }
+        public ClientHandler Partner { get; set; }
+        public bool HasMadeChoice { get; set; }
+        public string CurrentChoice { get; set; }
         public string ClientId { get; private set; }
         private static int clientCounter = 0;
 
@@ -303,7 +366,9 @@ namespace RockPaperScissorsServer
             this.client = client;
             this.server = server;
             this.stream = client.GetStream();
-            this.IsWaiting = false;
+            this.Partner = null;
+            this.HasMadeChoice = false;
+            this.CurrentChoice = null;
             this.ClientId = $"C{++clientCounter}";
         }
 
