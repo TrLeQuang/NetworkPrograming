@@ -13,3 +13,15 @@ SERVER - host: 127.0.0.1, port:5555
 Các file
 server.py            # Entry point – khởi động server
 server_handler.py    # Xử lý từng client
+
+
+Thành viên 2: Khang phụ trách Protocol + User Management
+- Thiết kế protocol (JSON):
+  - Ví dụ: `{ "type": "login", "user": "A", "msg": "hi" }`
+- Login / Logout (ở mức gói tin JSON)
+- Quản lý user online (danh sách user đang kết nối)
+- Thông báo join / leave (gói tin system message)
+
+Các file
+protocol.py        # Định nghĩa JSON protocol, encode/decode message
+user_manager.py    # Quản lý user online (username -> ClientHandler)
