@@ -4,6 +4,8 @@ import tkinter as tk
 from tkinter import scrolledtext
 from datetime import datetime
 from server_handler import ClientHandler
+from user_manager import UserManager
+
 
 class ChatServerGUI:
     def __init__(self, host='127.0.0.1', port=5555):
@@ -13,6 +15,9 @@ class ChatServerGUI:
         self.clients = []
         self.client_lock = threading.Lock()
         self.running = False
+        
+        # User Manager (cho Protocol)
+        self.user_manager = UserManager()
         
         # Tạo GUI
         self.window = tk.Tk()
@@ -25,7 +30,7 @@ class ChatServerGUI:
     def setup_gui(self):
         """Thiết lập giao diện server"""
         # Tiêu đề
-        header_frame = tk.Frame(self.window, bg="#89b4fa", height=60)
+        header_frame = tk.Frame(self. window, bg="#89b4fa", height=60)
         header_frame.pack(fill=tk.X, padx=0, pady=0)
         header_frame.pack_propagate(False)
         
@@ -39,7 +44,7 @@ class ChatServerGUI:
         title_label.pack(pady=15)
         
         # Server Info Frame
-        info_frame = tk.Frame(self.window, bg="#1e1e2e")
+        info_frame = tk. Frame(self.window, bg="#1e1e2e")
         info_frame.pack(fill=tk.X, padx=20, pady=10)
         
         self.status_label = tk.Label(
@@ -86,7 +91,7 @@ class ChatServerGUI:
         
         # Control Buttons Frame
         button_frame = tk.Frame(self.window, bg="#1e1e2e")
-        button_frame.pack(fill=tk.X, padx=20, pady=(0, 20))
+        button_frame.pack(fill=tk. X, padx=20, pady=(0, 20))
         
         self.start_button = tk.Button(
             button_frame,
@@ -119,7 +124,7 @@ class ChatServerGUI:
         
     def log(self, message, level="INFO"):
         """Ghi log vào text area"""
-        timestamp = datetime.now().strftime("%H:%M:%S")
+        timestamp = datetime. now().strftime("%H:%M:%S")
         
         # Màu sắc theo level
         colors = {
@@ -133,16 +138,16 @@ class ChatServerGUI:
         self.log_area.config(state='normal')
         
         # Timestamp
-        self.log_area.insert(tk.END, f"[{timestamp}] ", "timestamp")
+        self.log_area. insert(tk.END, f"[{timestamp}] ", "timestamp")
         
         # Level
-        self.log_area.insert(tk.END, f"[{level}] ", level)
+        self.log_area. insert(tk.END, f"[{level}] ", level)
         
         # Message
         self.log_area.insert(tk.END, f"{message}\n")
         
         # Config tags
-        self.log_area.tag_config("timestamp", foreground="#6c7086")
+        self.log_area. tag_config("timestamp", foreground="#6c7086")
         self.log_area.tag_config(level, foreground=colors.get(level, "#cdd6f4"), font=("Consolas", 9, "bold"))
         
         self.log_area.see(tk.END)
@@ -152,12 +157,13 @@ class ChatServerGUI:
         """Khởi động server"""
         try:
             self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            self.server.bind((self.host, self.port))
-            self.server.listen()
+            self.server. setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            self.server. bind((self.host, self. port))
+            self.server. listen(5)
             self.running = True
             
-            # Update UI số lượng client
-            self.status_label.config(text=f"● Server: ONLINE @ {self.host}:{self.port}", fg="#a6e3a1")
+            # Update UI
+            self.status_label.config(text=f"● Server: ONLINE @ {self.host}:{self. port}", fg="#a6e3a1")
             self.start_button.config(state='disabled')
             self.stop_button.config(state='normal')
             
@@ -167,20 +173,20 @@ class ChatServerGUI:
             # Start accept thread
             accept_thread = threading.Thread(target=self.accept_connections)
             accept_thread.daemon = True
-            accept_thread.start()
+            accept_thread. start()
             
         except Exception as e:
-            self.log(f"Lỗi khi khởi động server: {e}", "ERROR")
+            self.log(f"Lỗi khi khởi động server:  {e}", "ERROR")
     
     def accept_connections(self):
         """Accept nhiều client connections"""
         while self.running:
             try:
-                client_socket, address = self.server.accept()
+                client_socket, address = self.server. accept()
                 self.log(f"Kết nối mới từ {address[0]}:{address[1]}", "CLIENT")
                 
-                # Tạo thread mới cho mỗi client
-                handler = ClientHandler(client_socket, address, self)
+                # Tạo thread mới cho mỗi client (truyền user_manager)
+                handler = ClientHandler(client_socket, address, self, self.user_manager)
                 
                 with self.client_lock:
                     self.clients.append(handler)
@@ -193,15 +199,26 @@ class ChatServerGUI:
                     self.log(f"Lỗi khi accept connection: {e}", "ERROR")
                 break
     
-    def broadcast(self, message, sender_handler=None):
-        """Gửi message đến tất cả clients"""
-        with self.client_lock:
-            for client_handler in self.clients[:]:
-                if client_handler != sender_handler:
-                    try:
-                        client_handler.send_message(message)
-                    except:
-                        self.remove_client(client_handler)
+    def broadcast(self, data, exclude_username=None):
+        """
+        Gửi message (Protocol JSON) đến tất cả clients.
+        
+        Args:
+            data: dict message (đã build theo protocol)
+            exclude_username: username không gửi (optional)
+        """
+        online_users = self.user_manager.get_online_users()
+        
+        for username in online_users:
+            if username == exclude_username:
+                continue
+            
+            handler = self.user_manager.get_handler(username)
+            if handler: 
+                try:
+                    handler.send_raw(data)
+                except Exception as e:
+                    self.log(f"Không thể gửi tới {username}: {e}", "ERROR")
     
     def remove_client(self, handler):
         """Xóa client khi disconnect"""
@@ -209,11 +226,10 @@ class ChatServerGUI:
             if handler in self.clients:
                 self.clients.remove(handler)
                 self.update_client_count()
-                self.log(f"Client {handler.address[0]}:{handler.address[1]} đã ngắt kết nối", "WARNING")
     
     def update_client_count(self):
-        """Cập nhật số lượng clients"""
-        count = len(self.clients)
+        """Cập nhật số lượng clients online"""
+        count = len(self.user_manager.get_online_users())
         self.clients_label.config(text=f"👥 Clients: {count}")
     
     def stop_server(self):
@@ -223,12 +239,15 @@ class ChatServerGUI:
         
         # Đóng tất cả client connections
         with self.client_lock:
-            for handler in self.clients[:]:
+            for handler in self.clients[: ]:
                 handler.close()
         
         # Đóng server socket
         if self.server:
-            self.server.close()
+            try:
+                self.server.close()
+            except:
+                pass
         
         # Update UI
         self.status_label.config(text="● Server: OFFLINE", fg="#f38ba8")
@@ -246,11 +265,12 @@ class ChatServerGUI:
     
     def run(self):
         """Chạy ứng dụng"""
-        self.window.protocol("WM_DELETE_WINDOW", self.on_closing)
+        self.window.protocol("WM_DELETE_WINDOW", self. on_closing)
         self.log("Chat Server Dashboard khởi động", "SUCCESS")
         self.log(f"Sẵn sàng khởi động server tại {self.host}:{self.port}", "INFO")
         self.window.mainloop()
 
-if __name__ == "__main__":
+
+if __name__ == "__main__": 
     server_gui = ChatServerGUI()
     server_gui.run()
