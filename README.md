@@ -199,3 +199,13 @@ Task **Thành viên 3 - Client Network Core** đã hoàn thành đầy đủ cá
 ✅ **Thread nhận dữ liệu** - Receive loop liên tục  
 ✅ **Reconnect** - Tự động hoặc thủ công  
 ✅ **Error handling** - Username, disconnect, invalid message  
+
+
+Thành viên 4: Phan Quốc Huy – Phụ trách Client UI Desktop (Tkinter)
+    Xây dựng giao diện người dùng bằng Tkinter
+    Thực hiện đăng nhập người dùng (Login)
+    Hiển thị danh sách user online theo thời gian thực
+    Gửi / nhận message chat realtime
+Các file
+ui_chat.py            
+ui_logiin.pyw   #mở giao diện login ==> giao diện chat
