@@ -1,0 +1,1454 @@
+[2026-01-17 09:28:32] [SUCCESS] Chat Server Dashboard khởi động
+[2026-01-17 09:28:32] [INFO] Sẵn sàng khởi động server tại 127.0.0.1:5555
+[2026-01-17 09:28:58] [SUCCESS] Server đang chạy trên 127.0.0.1:5555
+[2026-01-17 09:28:58] [INFO] Đang chờ kết nối từ clients...
+[2026-01-17 09:29:00] [CLIENT] Kết nối mới từ 127.0.0.1:50611
+[2026-01-17 09:29:00] [SUCCESS] ✅ User 'QT' đã login từ 127.0.0.1:50611
+[2026-01-17 09:29:56] [SUCCESS] Chat Server Dashboard khởi động
+[2026-01-17 09:29:56] [INFO] Sẵn sàng khởi động server tại 127.0.0.1:5555
+[2026-01-17 09:31:16] [SUCCESS] Server đang chạy trên 127.0.0.1:5555
+[2026-01-17 09:31:16] [INFO] Đang chờ kết nối từ clients...
+[2026-01-17 09:31:19] [CLIENT] Kết nối mới từ 127.0.0.1:50643
+[2026-01-17 09:31:19] [SUCCESS] ✅ User 'A' đã login từ 127.0.0.1:50643
+[2026-01-17 09:32:06] [CLIENT] Kết nối mới từ 127.0.0.1:50649
+[2026-01-17 09:32:06] [SUCCESS] ✅ User 'B' đã login từ 127.0.0.1:50649
+[2026-01-17 09:32:32] [CLIENT] 💬 A: Xin chào
+[2026-01-17 09:32:43] [CLIENT] 💬 B: Bạn có khỏe không?
+[2026-01-17 09:32:59] [CLIENT] 💬 A: Tớ khỏe, cảm ơn bạn, còn bạn thì sao?
+[2026-01-17 09:33:10] [CLIENT] 💬 B: Tớ khỏe, cảm ơn bạn rất nhiều
+[2026-01-17 10:36:16] [WARNING] Đang tắt server...
+[2026-01-17 10:36:16] [WARNING] 👋 User 'A' đã rời khỏi
+[2026-01-17 10:42:16] [SUCCESS] Chat Server Dashboard khởi động
+[2026-01-17 10:42:16] [INFO] Sẵn sàng khởi động server tại 127.0.0.1:5555
+[2026-01-17 10:42:28] [SUCCESS] Server đang chạy trên 127.0.0.1:5555
+[2026-01-17 10:42:28] [INFO] Đang chờ kết nối từ clients...
+[2026-01-17 10:42:29] [CLIENT] Kết nối mới từ 127.0.0.1:56118
+[2026-01-17 10:42:29] [SUCCESS] ✅ User 'A' đã login từ 127.0.0.1:56118
+[2026-01-17 10:42:57] [CLIENT] Kết nối mới từ 127.0.0.1:56124
+[2026-01-17 10:42:57] [SUCCESS] ✅ User 'B' đã login từ 127.0.0.1:56124
+[2026-01-17 10:51:27] [SUCCESS] Chat Server Dashboard khởi động
+[2026-01-17 10:51:27] [INFO] Sẵn sàng khởi động server tại 127.0.0.1:5555
+[2026-01-17 10:51:46] [SUCCESS] Server đang chạy trên 127.0.0.1:5555
+[2026-01-17 10:51:46] [INFO] Đang chờ kết nối từ clients...
+[2026-01-17 10:51:48] [CLIENT] Kết nối mới từ 127.0.0.1:56370
+[2026-01-17 10:51:48] [SUCCESS] ✅ User 'A' đã login từ 127.0.0.1:56370
+[2026-01-17 10:52:07] [CLIENT] 💬 A: Hello
+[2026-01-17 10:56:51] [CLIENT] Kết nối mới từ 127.0.0.1:56393
+[2026-01-17 10:56:51] [SUCCESS] ✅ User 'Bot1' đã login từ 127.0.0.1:56393
+[2026-01-17 10:56:51] [CLIENT] Kết nối mới từ 127.0.0.1:56394
+[2026-01-17 10:56:51] [CLIENT] 💬 Bot1: bot-msg-1 from Bot1
+[2026-01-17 10:56:51] [SUCCESS] ✅ User 'Bot2' đã login từ 127.0.0.1:56394
+[2026-01-17 10:56:51] [CLIENT] 💬 Bot2: bot-msg-1 from Bot2
+[2026-01-17 10:56:51] [CLIENT] Kết nối mới từ 127.0.0.1:56395
+[2026-01-17 10:56:51] [SUCCESS] ✅ User 'Bot3' đã login từ 127.0.0.1:56395
+[2026-01-17 10:56:51] [CLIENT] 💬 Bot1: bot-msg-2 from Bot1
+[2026-01-17 10:56:51] [CLIENT] Kết nối mới từ 127.0.0.1:56396
+[2026-01-17 10:56:51] [CLIENT] 💬 Bot3: bot-msg-1 from Bot3
+[2026-01-17 10:56:51] [SUCCESS] ✅ User 'Bot4' đã login từ 127.0.0.1:56396
+[2026-01-17 10:56:51] [CLIENT] 💬 Bot4: bot-msg-1 from Bot4
+:56397
+[2026-01-17 10:56:51] [CLIENT] 💬 Bot2: bot-msg-2 from Bot2
+[2026-01-17 10:56:51] [SUCCESS] ✅ User 'Bot5' đã login từ 127.0.0.1:56397
+[2026-01-17 10:56:51] [CLIENT] Kết nối mới từ 127.0.0.1:56398
+[2026-01-17 10:56:51] [CLIENT] 💬 Bot5: bot-msg-1 from Bot5
+[2026-01-17 10:56:51] [SUCCESS] ✅ User 'Bot6' đã login từ 127.0.0.1:56398
+[2026-01-17 10:56:51] [CLIENT] Kết nối mới từ 127.0.0.1:56399
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot5: bot-msg-2 from Bot5
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot3: bot-msg-2 from Bot3
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot6: bot-msg-1 from Bot6
+[2026-01-17 10:56:52] [CLIENT] Kết nối mới từ 127.0.0.1:56400
+.1:56399
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot7: bot-msg-1 from Bot7
+[2026-01-17 10:56:52] [SUCCESS] ✅ User 'Bot8' đã login từ 127.0.0.1:56400
+[2026-01-17 10:56:52] [CLIENT] Kết nối mới từ 127.0.0.1:56401
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot1: bot-msg-3 from Bot1
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot8: bot-msg-1 from Bot8
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot6: bot-msg-2 from Bot6
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot4: bot-msg-2 from Bot4
+[2026-01-17 10:56:52] [CLIENT] Kết nối mới từ 127.0.0.1:56402
+[2026-01-17 10:56:52] [SUCCESS] ✅ User 'Bot9' đã login từ 127.0.0.1:56401
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot9: bot-msg-1 from Bot9
+[2026-01-17 10:56:52] [SUCCESS] ✅ User 'Bot10' đã login từ 127.0.0.1:56402
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot3: bot-msg-3 from Bot3
+[2026-01-17 10:56:52] [CLIENT] Kết nối mới từ 127.0.0.1:56403
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot10: bot-msg-1 from Bot10
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot7: bot-msg-2 from Bot7
+[2026-01-17 10:56:52] [SUCCESS] ✅ User 'Bot11' đã login từ 127.0.0.1:56403
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot9: bot-msg-2 from Bot9
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot11: bot-msg-1 from Bot11
+[2026-01-17 10:56:52] [CLIENT] Kết nối mới từ 127.0.0.1:56404
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot10: bot-msg-2 from Bot10
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot6: bot-msg-3 from Bot6
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot8: bot-msg-2 from Bot8
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot2: bot-msg-3 from Bot2
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot1: bot-msg-4 from Bot1
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot11: bot-msg-2 from Bot11
+[2026-01-17 10:56:52] [SUCCESS] ✅ User 'Bot12' đã login từ 127.0.0.1:56404
+[2026-01-17 10:56:52] [CLIENT] Kết nối mới từ 127.0.0.1:56405
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot5: bot-msg-3 from Bot5
+[2026-01-17 10:56:52] [CLIENT] Kết nối mới từ 127.0.0.1:56406
+[2026-01-17 10:56:52] [SUCCESS] ✅ User 'Bot13' đã login từ 127.0.0.1:56405
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot7: bot-msg-3 from Bot7
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot12: bot-msg-1 from Bot12
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot4: bot-msg-3 from Bot4
+[2026-01-17 10:56:52] [CLIENT] Kết nối mới từ 127.0.0.1:56407
+[2026-01-17 10:56:52] [SUCCESS] ✅ User 'Bot14' đã login từ 127.0.0.1:56406
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot13: bot-msg-1 from Bot13
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot8: bot-msg-3 from Bot8
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot3: bot-msg-4 from Bot3
+[2026-01-17 10:56:52] [SUCCESS] ✅ User 'Bot15' đã login từ 127.0.0.1:56407
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot14: bot-msg-1 from Bot14
+[2026-01-17 10:56:52] [CLIENT] 💬 Bot10: bot-msg-3 from Bot10
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot14: bot-msg-2 from Bot14
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot15: bot-msg-1 from Bot15
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot9: bot-msg-3 from Bot9
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot6: bot-msg-4 from Bot6
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot11: bot-msg-3 from Bot11
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot13: bot-msg-2 from Bot13
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot2: bot-msg-4 from Bot2
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot1: bot-msg-5 from Bot1
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot8: bot-msg-4 from Bot8
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot12: bot-msg-2 from Bot12
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot5: bot-msg-4 from Bot5
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot10: bot-msg-4 from Bot10
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot13: bot-msg-3 from Bot13
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot3: bot-msg-5 from Bot3
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot15: bot-msg-2 from Bot15
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot8: bot-msg-5 from Bot8
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot7: bot-msg-4 from Bot7
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot4: bot-msg-4 from Bot4
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot2: bot-msg-5 from Bot2
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot9: bot-msg-4 from Bot9
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot6: bot-msg-5 from Bot6
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot14: bot-msg-3 from Bot14
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot13: bot-msg-4 from Bot13
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot10: bot-msg-5 from Bot10
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot12: bot-msg-3 from Bot12
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot11: bot-msg-4 from Bot11
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot14: bot-msg-4 from Bot14
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot7: bot-msg-5 from Bot7
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot4: bot-msg-5 from Bot4
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot6: bot-msg-6 from Bot6
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot1: bot-msg-6 from Bot1
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot15: bot-msg-3 from Bot15
+[2026-01-17 10:56:53] [CLIENT] 💬 Bot5: bot-msg-5 from Bot5
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot3: bot-msg-6 from Bot3
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot2: bot-msg-6 from Bot2
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot8: bot-msg-6 from Bot8
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot12: bot-msg-4 from Bot12
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot2: bot-msg-7 from Bot2
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot1: bot-msg-7 from Bot1
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot5: bot-msg-6 from Bot5
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot15: bot-msg-4 from Bot15
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot7: bot-msg-6 from Bot7
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot13: bot-msg-5 from Bot13
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot6: bot-msg-7 from Bot6
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot9: bot-msg-5 from Bot9
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot11: bot-msg-5 from Bot11
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot4: bot-msg-6 from Bot4
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot1: bot-msg-8 from Bot1
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot8: bot-msg-7 from Bot8
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot10: bot-msg-6 from Bot10
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot3: bot-msg-7 from Bot3
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot13: bot-msg-6 from Bot13
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot4: bot-msg-7 from Bot4
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot14: bot-msg-5 from Bot14
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot8: bot-msg-8 from Bot8
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot5: bot-msg-7 from Bot5
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot12: bot-msg-5 from Bot12
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot9: bot-msg-6 from Bot9
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot15: bot-msg-5 from Bot15
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot14: bot-msg-6 from Bot14
+[2026-01-17 10:56:54] [CLIENT] 💬 Bot2: bot-msg-8 from Bot2
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot7: bot-msg-7 from Bot7
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot10: bot-msg-7 from Bot10
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot6: bot-msg-8 from Bot6
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot1: bot-msg-9 from Bot1
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot11: bot-msg-6 from Bot11
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot8: bot-msg-9 from Bot8
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot2: bot-msg-9 from Bot2
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot3: bot-msg-8 from Bot3
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot4: bot-msg-8 from Bot4
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot13: bot-msg-7 from Bot13
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot6: bot-msg-9 from Bot6
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot12: bot-msg-6 from Bot12
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot10: bot-msg-8 from Bot10
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot5: bot-msg-8 from Bot5
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot9: bot-msg-7 from Bot9
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot8: bot-msg-10 from Bot8
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot13: bot-msg-8 from Bot13
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot6: bot-msg-10 from Bot6
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot14: bot-msg-7 from Bot14
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot12: bot-msg-7 from Bot12
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot2: bot-msg-10 from Bot2
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot15: bot-msg-6 from Bot15
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot7: bot-msg-8 from Bot7
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot9: bot-msg-8 from Bot9
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot11: bot-msg-7 from Bot11
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot1: bot-msg-10 from Bot1
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot5: bot-msg-9 from Bot5
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot10: bot-msg-9 from Bot10
+[2026-01-17 10:56:55] [CLIENT] 💬 Bot4: bot-msg-9 from Bot4
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot3: bot-msg-9 from Bot3
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot9: bot-msg-9 from Bot9
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot2: bot-msg-11 from Bot2
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot8: bot-msg-11 from Bot8
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot4: bot-msg-10 from Bot4
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot10: bot-msg-10 from Bot10
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot13: bot-msg-9 from Bot13
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot1: bot-msg-11 from Bot1
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot12: bot-msg-8 from Bot12
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot3: bot-msg-10 from Bot3
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot7: bot-msg-9 from Bot7
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot11: bot-msg-8 from Bot11
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot14: bot-msg-8 from Bot14
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot4: bot-msg-11 from Bot4
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot15: bot-msg-7 from Bot15
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot6: bot-msg-11 from Bot6
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot5: bot-msg-10 from Bot5
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot10: bot-msg-11 from Bot10
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot12: bot-msg-9 from Bot12
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot2: bot-msg-12 from Bot2
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot11: bot-msg-9 from Bot11
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot1: bot-msg-12 from Bot1
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot14: bot-msg-9 from Bot14
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot7: bot-msg-10 from Bot7
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot15: bot-msg-8 from Bot15
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot5: bot-msg-11 from Bot5
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot8: bot-msg-12 from Bot8
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot3: bot-msg-11 from Bot3
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot2: bot-msg-13 from Bot2
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot9: bot-msg-10 from Bot9
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot1: bot-msg-13 from Bot1
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot4: bot-msg-12 from Bot4
+[2026-01-17 10:56:56] [CLIENT] 💬 Bot13: bot-msg-10 from Bot13
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot2: bot-msg-14 from Bot2
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot9: bot-msg-11 from Bot9
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot6: bot-msg-12 from Bot6
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot12: bot-msg-10 from Bot12
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot10: bot-msg-12 from Bot10
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot7: bot-msg-11 from Bot7
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot3: bot-msg-12 from Bot3
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot15: bot-msg-9 from Bot15
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot11: bot-msg-10 from Bot11
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot14: bot-msg-10 from Bot14
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot6: bot-msg-13 from Bot6
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot9: bot-msg-12 from Bot9
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot1: bot-msg-14 from Bot1
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot5: bot-msg-12 from Bot5
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot4: bot-msg-13 from Bot4
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot15: bot-msg-10 from Bot15
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot2: bot-msg-15 from Bot2
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot8: bot-msg-13 from Bot8
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot13: bot-msg-11 from Bot13
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot14: bot-msg-11 from Bot14
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot1: bot-msg-15 from Bot1
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot12: bot-msg-11 from Bot12
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot11: bot-msg-11 from Bot11
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot4: bot-msg-14 from Bot4
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot10: bot-msg-13 from Bot10
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot15: bot-msg-11 from Bot15
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot14: bot-msg-12 from Bot14
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot8: bot-msg-14 from Bot8
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot13: bot-msg-12 from Bot13
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot1: bot-msg-16 from Bot1
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot3: bot-msg-13 from Bot3
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot6: bot-msg-14 from Bot6
+[2026-01-17 10:56:57] [CLIENT] 💬 Bot7: bot-msg-12 from Bot7
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot9: bot-msg-13 from Bot9
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot10: bot-msg-14 from Bot10
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot8: bot-msg-15 from Bot8
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot5: bot-msg-13 from Bot5
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot2: bot-msg-16 from Bot2
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot11: bot-msg-12 from Bot11
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot6: bot-msg-15 from Bot6
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot12: bot-msg-12 from Bot12
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot15: bot-msg-12 from Bot15
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot1: bot-msg-17 from Bot1
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot8: bot-msg-16 from Bot8
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot9: bot-msg-14 from Bot9
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot14: bot-msg-13 from Bot14
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot4: bot-msg-15 from Bot4
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot5: bot-msg-14 from Bot5
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot1: bot-msg-18 from Bot1
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot7: bot-msg-13 from Bot7
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot2: bot-msg-17 from Bot2
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot13: bot-msg-13 from Bot13
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot11: bot-msg-13 from Bot11
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot9: bot-msg-15 from Bot9
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot10: bot-msg-15 from Bot10
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot3: bot-msg-14 from Bot3
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot15: bot-msg-13 from Bot15
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot6: bot-msg-16 from Bot6
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot5: bot-msg-15 from Bot5
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot8: bot-msg-17 from Bot8
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot10: bot-msg-16 from Bot10
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot12: bot-msg-13 from Bot12
+[2026-01-17 10:56:58] [CLIENT] 💬 Bot4: bot-msg-16 from Bot4
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot6: bot-msg-17 from Bot6
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot14: bot-msg-14 from Bot14
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot9: bot-msg-16 from Bot9
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot5: bot-msg-16 from Bot5
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot11: bot-msg-14 from Bot11
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot7: bot-msg-14 from Bot7
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot1: bot-msg-19 from Bot1
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot2: bot-msg-18 from Bot2
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot15: bot-msg-14 from Bot15
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot3: bot-msg-15 from Bot3
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot13: bot-msg-14 from Bot13
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot10: bot-msg-17 from Bot10
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot12: bot-msg-14 from Bot12
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot7: bot-msg-15 from Bot7
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot13: bot-msg-15 from Bot13
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot4: bot-msg-17 from Bot4
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot8: bot-msg-18 from Bot8
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot15: bot-msg-15 from Bot15
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot11: bot-msg-15 from Bot11
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot6: bot-msg-18 from Bot6
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot14: bot-msg-15 from Bot14
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot10: bot-msg-18 from Bot10
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot5: bot-msg-17 from Bot5
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot3: bot-msg-16 from Bot3
+[2026-01-17 10:56:59] [CLIENT] 💬 Bot9: bot-msg-17 from Bot9
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot12: bot-msg-15 from Bot12
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot1: bot-msg-20 from Bot1
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot2: bot-msg-19 from Bot2
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot6: bot-msg-19 from Bot6
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot10: bot-msg-19 from Bot10
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot8: bot-msg-19 from Bot8
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot4: bot-msg-18 from Bot4
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot7: bot-msg-16 from Bot7
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot12: bot-msg-16 from Bot12
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot14: bot-msg-16 from Bot14
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot1: bot-msg-21 from Bot1
+
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot13: bot-msg-16 from Bot13
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot8: bot-msg-20 from Bot8
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot15: bot-msg-16 from Bot15
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot3: bot-msg-17 from Bot3
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot4: bot-msg-19 from Bot4
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot10: bot-msg-20 from Bot10
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot5: bot-msg-18 from Bot5
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot9: bot-msg-18 from Bot9
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot1: bot-msg-22 from Bot1
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot2: bot-msg-20 from Bot2
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot6: bot-msg-20 from Bot6
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot13: bot-msg-17 from Bot13
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot11: bot-msg-17 from Bot11
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot14: bot-msg-17 from Bot14
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot4: bot-msg-20 from Bot4
+[2026-01-17 10:57:00] [CLIENT] 💬 Bot8: bot-msg-21 from Bot8
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot12: bot-msg-17 from Bot12
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot2: bot-msg-21 from Bot2
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot5: bot-msg-19 from Bot5
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot7: bot-msg-17 from Bot7
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot8: bot-msg-22 from Bot8
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot15: bot-msg-17 from Bot15
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot10: bot-msg-21 from Bot10
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot1: bot-msg-23 from Bot1
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot3: bot-msg-18 from Bot3
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot7: bot-msg-18 from Bot7
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot5: bot-msg-20 from Bot5
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot9: bot-msg-19 from Bot9
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot13: bot-msg-18 from Bot13
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot14: bot-msg-18 from Bot14
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot3: bot-msg-19 from Bot3
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot6: bot-msg-21 from Bot6
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot4: bot-msg-21 from Bot4
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot12: bot-msg-18 from Bot12
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot11: bot-msg-18 from Bot11
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot15: bot-msg-18 from Bot15
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot2: bot-msg-22 from Bot2
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot1: bot-msg-24 from Bot1
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot7: bot-msg-19 from Bot7
+[2026-01-17 10:57:01] [CLIENT] 💬 Bot6: bot-msg-22 from Bot6
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot10: bot-msg-22 from Bot10
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot8: bot-msg-23 from Bot8
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot15: bot-msg-19 from Bot15
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot5: bot-msg-21 from Bot5
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot12: bot-msg-19 from Bot12
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot9: bot-msg-20 from Bot9
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot13: bot-msg-19 from Bot13
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot14: bot-msg-19 from Bot14
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot4: bot-msg-22 from Bot4
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot3: bot-msg-20 from Bot3
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot2: bot-msg-23 from Bot2
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot1: bot-msg-25 from Bot1
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot10: bot-msg-23 from Bot10
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot7: bot-msg-20 from Bot7
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot11: bot-msg-19 from Bot11
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot15: bot-msg-20 from Bot15
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot8: bot-msg-24 from Bot8
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot6: bot-msg-23 from Bot6
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot1: bot-msg-26 from Bot1
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot12: bot-msg-20 from Bot12
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot9: bot-msg-21 from Bot9
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot2: bot-msg-24 from Bot2
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot5: bot-msg-22 from Bot5
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot7: bot-msg-21 from Bot7
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot13: bot-msg-20 from Bot13
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot3: bot-msg-21 from Bot3
+[2026-01-17 10:57:02] [CLIENT] 💬 Bot8: bot-msg-25 from Bot8
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot14: bot-msg-20 from Bot14
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot11: bot-msg-20 from Bot11
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot4: bot-msg-23 from Bot4
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot15: bot-msg-21 from Bot15
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot1: bot-msg-27 from Bot1
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot6: bot-msg-24 from Bot6
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot10: bot-msg-24 from Bot10
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot7: bot-msg-22 from Bot7
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot12: bot-msg-21 from Bot12
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot5: bot-msg-23 from Bot5
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot9: bot-msg-22 from Bot9
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot8: bot-msg-26 from Bot8
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot13: bot-msg-21 from Bot13
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot6: bot-msg-25 from Bot6
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot3: bot-msg-22 from Bot3
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot8: bot-msg-27 from Bot8
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot11: bot-msg-21 from Bot11
+[2026-01-17 10:57:03] [INFO] 👋 User 'Bot2' đã logout
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot7: bot-msg-23 from Bot7
+[2026-01-17 10:57:03] [ERROR] Không thể gửi message đến Bot2: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:03] [ERROR] Không thể gửi message đến Bot2: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot9: bot-msg-23 from Bot9
+[2026-01-17 10:57:03] [ERROR] Không thể gửi message đến Bot2: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot5: bot-msg-24 from Bot5
+[2026-01-17 10:57:03] [WARNING] 👋 User 'Bot2' đã rời khỏi
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot6: bot-msg-26 from Bot6
+[2026-01-17 10:57:03] [INFO] 👋 User 'Bot4' đã logout
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot14: bot-msg-21 from Bot14
+[2026-01-17 10:57:03] [ERROR] Không thể gửi message đến Bot4: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot15: bot-msg-22 from Bot15
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot11: bot-msg-22 from Bot11
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot10: bot-msg-25 from Bot10
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot12: bot-msg-22 from Bot12
+[2026-01-17 10:57:03] [WARNING] 👋 User 'Bot4' đã rời khỏi
+[2026-01-17 10:57:03] [INFO] 👋 User 'Bot1' đã logout
+[2026-01-17 10:57:03] [ERROR] Không thể gửi message đến Bot1: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:03] [ERROR] Không thể gửi message đến Bot1: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:03] [WARNING] 👋 User 'Bot1' đã rời khỏi
+[2026-01-17 10:57:03] [CLIENT] 💬 Bot8: bot-msg-28 from Bot8
+[2026-01-17 10:57:04] [CLIENT] 💬 Bot13: bot-msg-22 from Bot13
+[2026-01-17 10:57:04] [CLIENT] 💬 Bot15: bot-msg-23 from Bot15
+[2026-01-17 10:57:04] [CLIENT] 💬 Bot11: bot-msg-23 from Bot11
+[2026-01-17 10:57:04] [CLIENT] 💬 Bot9: bot-msg-24 from Bot9
+[2026-01-17 10:57:04] [INFO] 👋 User 'Bot3' đã logout
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot3: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot3: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [WARNING] 👋 User 'Bot3' đã rời khỏi
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot3: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [INFO] 👋 User 'Bot8' đã logout
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot8: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [INFO] 👋 User 'Bot7' đã logout
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot8: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [WARNING] 👋 User 'Bot8' đã rời khỏi
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot7: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot7: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [CLIENT] 💬 Bot12: bot-msg-23 from Bot12
+[2026-01-17 10:57:04] [CLIENT] 💬 Bot14: bot-msg-22 from Bot14
+[2026-01-17 10:57:04] [INFO] 👋 User 'Bot10' đã logout
+[2026-01-17 10:57:04] [CLIENT] 💬 Bot13: bot-msg-23 from Bot13
+[2026-01-17 10:57:04] [WARNING] 👋 User 'Bot7' đã rời khỏi
+[2026-01-17 10:57:04] [CLIENT] 💬 Bot15: bot-msg-24 from Bot15
+[2026-01-17 10:57:04] [INFO] 👋 User 'Bot6' đã logout
+[2026-01-17 10:57:04] [INFO] 👋 User 'Bot5' đã logout
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot5: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot10: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot10: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot5: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot5: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [WARNING] 👋 User 'Bot10' đã rời khỏi
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot5: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot5: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot5: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [WARNING] 👋 User 'Bot6' đã rời khỏi
+[2026-01-17 10:57:04] [WARNING] 👋 User 'Bot5' đã rời khỏi
+[2026-01-17 10:57:04] [CLIENT] 💬 Bot11: bot-msg-24 from Bot11
+[2026-01-17 10:57:04] [INFO] 👋 User 'Bot9' đã logout
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [INFO] 👋 User 'Bot14' đã logout
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [WARNING] 👋 User 'Bot9' đã rời khỏi
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [WARNING] 👋 User 'Bot14' đã rời khỏi
+[2026-01-17 10:57:04] [INFO] 👋 User 'Bot12' đã logout
+[2026-01-17 10:57:04] [ERROR] Không thể gửi message đến Bot12: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:04] [WARNING] 👋 User 'Bot12' đã rời khỏi
+[2026-01-17 10:57:04] [INFO] 👋 User 'Bot15' đã logout
+[2026-01-17 10:57:05] [ERROR] Không thể gửi message đến Bot15: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:05] [WARNING] 👋 User 'Bot15' đã rời khỏi
+[2026-01-17 10:57:05] [ERROR] Không thể gửi message đến Bot15: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:05] [INFO] 👋 User 'Bot13' đã logout
+[2026-01-17 10:57:05] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:05] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:05] [INFO] 👋 User 'Bot11' đã logout
+[2026-01-17 10:57:05] [WARNING] 👋 User 'Bot13' đã rời khỏi
+[2026-01-17 10:57:05] [ERROR] Không thể gửi message đến Bot11: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:57:05] [WARNING] 👋 User 'Bot11' đã rời khỏi
+[2026-01-17 10:58:29] [CLIENT] Kết nối mới từ 127.0.0.1:56413
+[2026-01-17 10:58:29] [SUCCESS] ✅ User 'Bot1' đã login từ 127.0.0.1:56413
+[2026-01-17 10:58:29] [CLIENT] 💬 Bot1: bot-msg-1 from Bot1
+[2026-01-17 10:58:29] [CLIENT] Kết nối mới từ 127.0.0.1:56414
+[2026-01-17 10:58:29] [SUCCESS] ✅ User 'Bot2' đã login từ 127.0.0.1:56414
+[2026-01-17 10:58:29] [CLIENT] 💬 Bot2: bot-msg-1 from Bot2
+[2026-01-17 10:58:29] [CLIENT] Kết nối mới từ 127.0.0.1:56415
+[2026-01-17 10:58:29] [SUCCESS] ✅ User 'Bot3' đã login từ 127.0.0.1:56415
+[2026-01-17 10:58:29] [CLIENT] 💬 Bot3: bot-msg-1 from Bot3
+[2026-01-17 10:58:29] [CLIENT] 💬 Bot1: bot-msg-2 from Bot1
+[2026-01-17 10:58:29] [CLIENT] Kết nối mới từ 127.0.0.1:56416
+[2026-01-17 10:58:29] [CLIENT] 💬 Bot2: bot-msg-2 from Bot2
+[2026-01-17 10:58:29] [CLIENT] Kết nối mới từ 127.0.0.1:56417
+[2026-01-17 10:58:29] [SUCCESS] ✅ User 'Bot4' đã login từ 127.0.0.1:56416
+[2026-01-17 10:58:29] [CLIENT] 💬 Bot4: bot-msg-1 from Bot4
+[2026-01-17 10:58:29] [SUCCESS] ✅ User 'Bot5' đã login từ 127.0.0.1:56417
+[2026-01-17 10:58:29] [CLIENT] Kết nối mới từ 127.0.0.1:56418
+[2026-01-17 10:58:29] [CLIENT] 💬 Bot5: bot-msg-1 from Bot5
+[2026-01-17 10:58:29] [SUCCESS] ✅ User 'Bot6' đã login từ 127.0.0.1:56418
+[2026-01-17 10:58:29] [CLIENT] 💬 Bot6: bot-msg-1 from Bot6
+[2026-01-17 10:58:29] [CLIENT] Kết nối mới từ 127.0.0.1:56419
+[2026-01-17 10:58:29] [CLIENT] 💬 Bot2: bot-msg-3 from Bot2
+[2026-01-17 10:58:29] [SUCCESS] ✅ User 'Bot7' đã login từ 127.0.0.1:56419
+[2026-01-17 10:58:29] [CLIENT] 💬 Bot7: bot-msg-1 from Bot7
+[2026-01-17 10:58:29] [CLIENT] Kết nối mới từ 127.0.0.1:56420
+[2026-01-17 10:58:30] [SUCCESS] ✅ User 'Bot8' đã login từ 127.0.0.1:56420
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot1: bot-msg-3 from Bot1
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot4: bot-msg-2 from Bot4
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot8: bot-msg-1 from Bot8
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot3: bot-msg-2 from Bot3
+[2026-01-17 10:58:30] [CLIENT] Kết nối mới từ 127.0.0.1:56421
+[2026-01-17 10:58:30] [SUCCESS] ✅ User 'Bot9' đã login từ 127.0.0.1:56421
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot9: bot-msg-1 from Bot9
+[2026-01-17 10:58:30] [CLIENT] Kết nối mới từ 127.0.0.1:56422
+[2026-01-17 10:58:30] [SUCCESS] ✅ User 'Bot10' đã login từ 127.0.0.1:56422
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot10: bot-msg-1 from Bot10
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot1: bot-msg-4 from Bot1
+[2026-01-17 10:58:30] [CLIENT] Kết nối mới từ 127.0.0.1:56423
+[2026-01-17 10:58:30] [SUCCESS] ✅ User 'Bot11' đã login từ 127.0.0.1:56423
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot11: bot-msg-1 from Bot11
+[2026-01-17 10:58:30] [CLIENT] Kết nối mới từ 127.0.0.1:56424
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot8: bot-msg-2 from Bot8
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot5: bot-msg-2 from Bot5
+[2026-01-17 10:58:30] [SUCCESS] ✅ User 'Bot12' đã login từ 127.0.0.1:56424
+[2026-01-17 10:58:30] [CLIENT] Kết nối mới từ 127.0.0.1:56425
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot12: bot-msg-1 from Bot12
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot6: bot-msg-2 from Bot6
+[2026-01-17 10:58:30] [SUCCESS] ✅ User 'Bot13' đã login từ 127.0.0.1:56425
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot3: bot-msg-3 from Bot3
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot13: bot-msg-1 from Bot13
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot2: bot-msg-4 from Bot2
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot10: bot-msg-2 from Bot10
+[2026-01-17 10:58:30] [CLIENT] Kết nối mới từ 127.0.0.1:56426
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot4: bot-msg-3 from Bot4
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot7: bot-msg-2 from Bot7
+[2026-01-17 10:58:30] [SUCCESS] ✅ User 'Bot14' đã login từ 127.0.0.1:56426
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot14: bot-msg-1 from Bot14
+[2026-01-17 10:58:30] [CLIENT] Kết nối mới từ 127.0.0.1:56427
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot1: bot-msg-5 from Bot1
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot6: bot-msg-3 from Bot6
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot9: bot-msg-2 from Bot9
+[2026-01-17 10:58:30] [SUCCESS] ✅ User 'Bot15' đã login từ 127.0.0.1:56427
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot12: bot-msg-2 from Bot12
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot11: bot-msg-2 from Bot11
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot15: bot-msg-1 from Bot15
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot2: bot-msg-5 from Bot2
+[2026-01-17 10:58:30] [CLIENT] 💬 Bot3: bot-msg-4 from Bot3
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot4: bot-msg-4 from Bot4
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot14: bot-msg-2 from Bot14
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot5: bot-msg-3 from Bot5
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot13: bot-msg-2 from Bot13
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot8: bot-msg-3 from Bot8
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot15: bot-msg-2 from Bot15
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot7: bot-msg-3 from Bot7
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot3: bot-msg-5 from Bot3
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot2: bot-msg-6 from Bot2
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot12: bot-msg-3 from Bot12
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot10: bot-msg-3 from Bot10
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot1: bot-msg-6 from Bot1
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot14: bot-msg-3 from Bot14
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot4: bot-msg-5 from Bot4
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot6: bot-msg-4 from Bot6
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot9: bot-msg-3 from Bot9
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot7: bot-msg-4 from Bot7
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot15: bot-msg-3 from Bot15
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot11: bot-msg-3 from Bot11
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot4: bot-msg-6 from Bot4
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot3: bot-msg-6 from Bot3
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot14: bot-msg-4 from Bot14
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot13: bot-msg-3 from Bot13
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot5: bot-msg-4 from Bot5
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot8: bot-msg-4 from Bot8
+[2026-01-17 10:58:31] [CLIENT] 💬 Bot6: bot-msg-5 from Bot6
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot12: bot-msg-4 from Bot12
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot11: bot-msg-4 from Bot11
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot7: bot-msg-5 from Bot7
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot2: bot-msg-7 from Bot2
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot9: bot-msg-4 from Bot9
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot10: bot-msg-4 from Bot10
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot1: bot-msg-7 from Bot1
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot3: bot-msg-7 from Bot3
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot15: bot-msg-4 from Bot15
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot8: bot-msg-5 from Bot8
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot4: bot-msg-7 from Bot4
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot3: bot-msg-8 from Bot3
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot6: bot-msg-6 from Bot6
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot2: bot-msg-8 from Bot2
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot14: bot-msg-5 from Bot14
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot4: bot-msg-8 from Bot4
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot8: bot-msg-6 from Bot8
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot9: bot-msg-5 from Bot9
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot5: bot-msg-5 from Bot5
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot13: bot-msg-4 from Bot13
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot12: bot-msg-5 from Bot12
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot10: bot-msg-5 from Bot10
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot15: bot-msg-5 from Bot15
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot7: bot-msg-6 from Bot7
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot1: bot-msg-8 from Bot1
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot2: bot-msg-9 from Bot2
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot8: bot-msg-7 from Bot8
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot4: bot-msg-9 from Bot4
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot11: bot-msg-5 from Bot11
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot15: bot-msg-6 from Bot15
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot3: bot-msg-9 from Bot3
+[2026-01-17 10:58:32] [CLIENT] 💬 Bot6: bot-msg-7 from Bot6
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot5: bot-msg-6 from Bot5
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot4: bot-msg-10 from Bot4
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot13: bot-msg-5 from Bot13
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot12: bot-msg-6 from Bot12
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot9: bot-msg-6 from Bot9
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot3: bot-msg-10 from Bot3
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot14: bot-msg-6 from Bot14
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot1: bot-msg-9 from Bot1
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot11: bot-msg-6 from Bot11
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot2: bot-msg-10 from Bot2
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot8: bot-msg-8 from Bot8
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot7: bot-msg-7 from Bot7
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot10: bot-msg-6 from Bot10
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot12: bot-msg-7 from Bot12
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot5: bot-msg-7 from Bot5
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot9: bot-msg-7 from Bot9
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot15: bot-msg-7 from Bot15
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot3: bot-msg-11 from Bot3
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot11: bot-msg-7 from Bot11
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot6: bot-msg-8 from Bot6
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot14: bot-msg-7 from Bot14
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot13: bot-msg-6 from Bot13
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot15: bot-msg-8 from Bot15
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot7: bot-msg-8 from Bot7
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot8: bot-msg-9 from Bot8
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot12: bot-msg-8 from Bot12
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot9: bot-msg-8 from Bot9
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot5: bot-msg-8 from Bot5
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot4: bot-msg-11 from Bot4
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot14: bot-msg-8 from Bot14
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot11: bot-msg-8 from Bot11
+[2026-01-17 10:58:33] [CLIENT] 💬 Bot6: bot-msg-9 from Bot6
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot1: bot-msg-10 from Bot1
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot2: bot-msg-11 from Bot2
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot8: bot-msg-10 from Bot8
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot15: bot-msg-9 from Bot15
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot3: bot-msg-12 from Bot3
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot5: bot-msg-9 from Bot5
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot13: bot-msg-7 from Bot13
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot10: bot-msg-7 from Bot10
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot4: bot-msg-12 from Bot4
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot8: bot-msg-11 from Bot8
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot12: bot-msg-9 from Bot12
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot5: bot-msg-10 from Bot5
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot7: bot-msg-9 from Bot7
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot9: bot-msg-9 from Bot9
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot2: bot-msg-12 from Bot2
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot6: bot-msg-10 from Bot6
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot10: bot-msg-8 from Bot10
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot14: bot-msg-9 from Bot14
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot3: bot-msg-13 from Bot3
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot1: bot-msg-11 from Bot1
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot11: bot-msg-9 from Bot11
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot15: bot-msg-10 from Bot15
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot7: bot-msg-10 from Bot7
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot13: bot-msg-8 from Bot13
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot6: bot-msg-11 from Bot6
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot4: bot-msg-13 from Bot4
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot9: bot-msg-10 from Bot9
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot2: bot-msg-13 from Bot2
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot14: bot-msg-10 from Bot14
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot1: bot-msg-12 from Bot1
+[2026-01-17 10:58:34] [CLIENT] 💬 Bot5: bot-msg-11 from Bot5
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot3: bot-msg-14 from Bot3
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot13: bot-msg-9 from Bot13
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot8: bot-msg-12 from Bot8
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot12: bot-msg-10 from Bot12
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot15: bot-msg-11 from Bot15
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot4: bot-msg-14 from Bot4
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot11: bot-msg-10 from Bot11
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot2: bot-msg-14 from Bot2
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot10: bot-msg-9 from Bot10
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot14: bot-msg-11 from Bot14
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot8: bot-msg-13 from Bot8
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot9: bot-msg-11 from Bot9
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot6: bot-msg-12 from Bot6
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot2: bot-msg-15 from Bot2
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot4: bot-msg-15 from Bot4
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot7: bot-msg-11 from Bot7
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot5: bot-msg-12 from Bot5
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot11: bot-msg-11 from Bot11
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot10: bot-msg-10 from Bot10
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot3: bot-msg-15 from Bot3
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot15: bot-msg-12 from Bot15
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot13: bot-msg-10 from Bot13
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot12: bot-msg-11 from Bot12
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot7: bot-msg-12 from Bot7
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot3: bot-msg-16 from Bot3
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot15: bot-msg-13 from Bot15
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot5: bot-msg-13 from Bot5
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot6: bot-msg-13 from Bot6
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot7: bot-msg-13 from Bot7
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot14: bot-msg-12 from Bot14
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot8: bot-msg-14 from Bot8
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot2: bot-msg-16 from Bot2
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot11: bot-msg-12 from Bot11
+[2026-01-17 10:58:35] [CLIENT] 💬 Bot9: bot-msg-12 from Bot9
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot4: bot-msg-16 from Bot4
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot1: bot-msg-14 from Bot1
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot12: bot-msg-12 from Bot12
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot14: bot-msg-13 from Bot14
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot3: bot-msg-17 from Bot3
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot13: bot-msg-11 from Bot13
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot5: bot-msg-14 from Bot5
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot10: bot-msg-11 from Bot10
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot15: bot-msg-14 from Bot15
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot1: bot-msg-15 from Bot1
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot6: bot-msg-14 from Bot6
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot4: bot-msg-17 from Bot4
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot9: bot-msg-13 from Bot9
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot7: bot-msg-14 from Bot7
+
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot8: bot-msg-15 from Bot8
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot2: bot-msg-17 from Bot2
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot5: bot-msg-15 from Bot5
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot14: bot-msg-14 from Bot14
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot10: bot-msg-12 from Bot10
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot9: bot-msg-14 from Bot9
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot11: bot-msg-14 from Bot11
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot12: bot-msg-13 from Bot12
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot1: bot-msg-16 from Bot1
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot2: bot-msg-18 from Bot2
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot4: bot-msg-18 from Bot4
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot3: bot-msg-18 from Bot3
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot13: bot-msg-12 from Bot13
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot15: bot-msg-15 from Bot15
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot8: bot-msg-16 from Bot8
+[2026-01-17 10:58:36] [CLIENT] 💬 Bot6: bot-msg-15 from Bot6
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot7: bot-msg-15 from Bot7
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot5: bot-msg-16 from Bot5
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot9: bot-msg-15 from Bot9
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot11: bot-msg-15 from Bot11
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot12: bot-msg-14 from Bot12
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot15: bot-msg-16 from Bot15
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot14: bot-msg-15 from Bot14
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot2: bot-msg-19 from Bot2
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot1: bot-msg-17 from Bot1
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot5: bot-msg-17 from Bot5
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot10: bot-msg-13 from Bot10
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot11: bot-msg-16 from Bot11
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot3: bot-msg-19 from Bot3
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot4: bot-msg-19 from Bot4
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot12: bot-msg-15 from Bot12
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot7: bot-msg-16 from Bot7
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot6: bot-msg-16 from Bot6
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot15: bot-msg-17 from Bot15
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot10: bot-msg-14 from Bot10
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot8: bot-msg-17 from Bot8
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot13: bot-msg-13 from Bot13
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot1: bot-msg-18 from Bot1
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot4: bot-msg-20 from Bot4
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot9: bot-msg-16 from Bot9
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot15: bot-msg-18 from Bot15
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot8: bot-msg-18 from Bot8
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot14: bot-msg-16 from Bot14
+[2026-01-17 10:58:37] [CLIENT] 💬 Bot10: bot-msg-15 from Bot10
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot5: bot-msg-18 from Bot5
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot15: bot-msg-19 from Bot15
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot13: bot-msg-14 from Bot13
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot2: bot-msg-20 from Bot2
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot12: bot-msg-16 from Bot12
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot9: bot-msg-17 from Bot9
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot11: bot-msg-17 from Bot11
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot3: bot-msg-20 from Bot3
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot1: bot-msg-19 from Bot1
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot14: bot-msg-17 from Bot14
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot2: bot-msg-21 from Bot2
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot6: bot-msg-17 from Bot6
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot7: bot-msg-17 from Bot7
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot1: bot-msg-20 from Bot1
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot4: bot-msg-21 from Bot4
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot13: bot-msg-15 from Bot13
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot12: bot-msg-17 from Bot12
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot6: bot-msg-18 from Bot6
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot8: bot-msg-19 from Bot8
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot10: bot-msg-16 from Bot10
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot9: bot-msg-18 from Bot9
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot5: bot-msg-19 from Bot5
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot15: bot-msg-20 from Bot15
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot14: bot-msg-18 from Bot14
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot3: bot-msg-21 from Bot3
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot6: bot-msg-19 from Bot6
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot11: bot-msg-18 from Bot11
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot1: bot-msg-21 from Bot1
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot2: bot-msg-22 from Bot2
+[2026-01-17 10:58:38] [CLIENT] 💬 Bot7: bot-msg-18 from Bot7
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot4: bot-msg-22 from Bot4
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot8: bot-msg-20 from Bot8
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot12: bot-msg-18 from Bot12
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot5: bot-msg-20 from Bot5
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot13: bot-msg-16 from Bot13
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot10: bot-msg-17 from Bot10
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot14: bot-msg-19 from Bot14
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot9: bot-msg-19 from Bot9
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot3: bot-msg-22 from Bot3
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot4: bot-msg-23 from Bot4
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot1: bot-msg-22 from Bot1
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot13: bot-msg-17 from Bot13
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot7: bot-msg-19 from Bot7
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot15: bot-msg-21 from Bot15
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot6: bot-msg-20 from Bot6
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot11: bot-msg-19 from Bot11
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot2: bot-msg-23 from Bot2
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot3: bot-msg-23 from Bot3
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot9: bot-msg-20 from Bot9
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot13: bot-msg-18 from Bot13
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot5: bot-msg-21 from Bot5
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot7: bot-msg-20 from Bot7
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot14: bot-msg-20 from Bot14
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot8: bot-msg-21 from Bot8
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot10: bot-msg-18 from Bot10
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot12: bot-msg-19 from Bot12
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot3: bot-msg-24 from Bot3
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot15: bot-msg-22 from Bot15
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot4: bot-msg-24 from Bot4
+[2026-01-17 10:58:39] [CLIENT] 💬 Bot1: bot-msg-23 from Bot1
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot2: bot-msg-24 from Bot2
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot6: bot-msg-21 from Bot6
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot13: bot-msg-19 from Bot13
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot5: bot-msg-22 from Bot5
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot14: bot-msg-21 from Bot14
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot10: bot-msg-19 from Bot10
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot12: bot-msg-20 from Bot12
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot11: bot-msg-20 from Bot11
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot7: bot-msg-21 from Bot7
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot8: bot-msg-22 from Bot8
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot9: bot-msg-21 from Bot9
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot4: bot-msg-25 from Bot4
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot12: bot-msg-21 from Bot12
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot7: bot-msg-22 from Bot7
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot6: bot-msg-22 from Bot6
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot3: bot-msg-25 from Bot3
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot2: bot-msg-25 from Bot2
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot10: bot-msg-20 from Bot10
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot13: bot-msg-20 from Bot13
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot15: bot-msg-23 from Bot15
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot1: bot-msg-24 from Bot1
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot14: bot-msg-22 from Bot14
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot5: bot-msg-23 from Bot5
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot8: bot-msg-23 from Bot8
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot9: bot-msg-22 from Bot9
+[2026-01-17 10:58:40] [CLIENT] 💬 Bot15: bot-msg-24 from Bot15
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot10: bot-msg-21 from Bot10
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot11: bot-msg-21 from Bot11
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot13: bot-msg-21 from Bot13
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot7: bot-msg-23 from Bot7
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot12: bot-msg-22 from Bot12
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot8: bot-msg-24 from Bot8
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot9: bot-msg-23 from Bot9
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot10: bot-msg-22 from Bot10
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot3: bot-msg-26 from Bot3
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot6: bot-msg-23 from Bot6
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot15: bot-msg-25 from Bot15
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot13: bot-msg-22 from Bot13
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot4: bot-msg-26 from Bot4
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot2: bot-msg-26 from Bot2
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot12: bot-msg-23 from Bot12
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot5: bot-msg-24 from Bot5
+[2026-01-17 10:58:41] [INFO] 👋 User 'Bot1' đã logout
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot10: bot-msg-23 from Bot10
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot15: bot-msg-26 from Bot15
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot14: bot-msg-23 from Bot14
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot7: bot-msg-24 from Bot7
+[2026-01-17 10:58:41] [ERROR] Không thể gửi message đến Bot1: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot4: bot-msg-27 from Bot4
+[2026-01-17 10:58:41] [INFO] 👋 User 'Bot2' đã logout
+[2026-01-17 10:58:41] [ERROR] Không thể gửi message đến Bot1: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:41] [WARNING] 👋 User 'Bot1' đã rời khỏi
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot9: bot-msg-24 from Bot9
+[2026-01-17 10:58:41] [ERROR] Không thể gửi message đến Bot2: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:41] [ERROR] Không thể gửi message đến Bot2: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:41] [ERROR] Không thể gửi message đến Bot2: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:41] [ERROR] Không thể gửi message đến Bot2: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:41] [ERROR] Không thể gửi message đến Bot2: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:41] [ERROR] Không thể gửi message đến Bot2: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:41] [WARNING] 👋 User 'Bot2' đã rời khỏi
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot11: bot-msg-22 from Bot11
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot14: bot-msg-24 from Bot14
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot8: bot-msg-25 from Bot8
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot10: bot-msg-24 from Bot10
+[2026-01-17 10:58:41] [INFO] 👋 User 'Bot3' đã logout
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot15: bot-msg-27 from Bot15
+[2026-01-17 10:58:41] [ERROR] Không thể gửi message đến Bot3: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot9: bot-msg-25 from Bot9
+[2026-01-17 10:58:41] [ERROR] Không thể gửi message đến Bot3: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:41] [ERROR] Không thể gửi message đến Bot3: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:41] [WARNING] 👋 User 'Bot3' đã rời khỏi
+[2026-01-17 10:58:41] [CLIENT] 💬 Bot12: bot-msg-24 from Bot12
+[2026-01-17 10:58:42] [INFO] 👋 User 'Bot7' đã logout
+[2026-01-17 10:58:42] [CLIENT] 💬 Bot11: bot-msg-23 from Bot11
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot6: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [INFO] 👋 User 'Bot6' đã logout
+[2026-01-17 10:58:42] [CLIENT] 💬 Bot13: bot-msg-23 from Bot13
+[2026-01-17 10:58:42] [WARNING] 👋 User 'Bot7' đã rời khỏi
+[2026-01-17 10:58:42] [INFO] 👋 User 'Bot5' đã logout
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot6: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [WARNING] 👋 User 'Bot6' đã rời khỏi
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot5: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot5: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [WARNING] 👋 User 'Bot5' đã rời khỏi
+[2026-01-17 10:58:42] [CLIENT] 💬 Bot12: bot-msg-25 from Bot12
+[2026-01-17 10:58:42] [INFO] 👋 User 'Bot8' đã logout
+[2026-01-17 10:58:42] [INFO] 👋 User 'Bot10' đã logout
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot8: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot8: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot8: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot8: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [WARNING] 👋 User 'Bot10' đã rời khỏi
+[2026-01-17 10:58:42] [WARNING] 👋 User 'Bot8' đã rời khỏi
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot8: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [INFO] 👋 User 'Bot4' đã logout
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot4: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [CLIENT] 💬 Bot13: bot-msg-24 from Bot13
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot4: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot4: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot4: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot4: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [WARNING] 👋 User 'Bot4' đã rời khỏi
+[2026-01-17 10:58:42] [CLIENT] 💬 Bot15: bot-msg-28 from Bot15
+[2026-01-17 10:58:42] [INFO] 👋 User 'Bot9' đã logout
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [CLIENT] 💬 Bot14: bot-msg-25 from Bot14
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot9: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [WARNING] 👋 User 'Bot9' đã rời khỏi
+[2026-01-17 10:58:42] [INFO] 👋 User 'Bot12' đã logout
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot12: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot12: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot12: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot12: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot12: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot12: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot12: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot12: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [WARNING] 👋 User 'Bot12' đã rời khỏi
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [INFO] 👋 User 'Bot11' đã logout
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot11: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [WARNING] 👋 User 'Bot11' đã rời khỏi
+[2026-01-17 10:58:42] [WARNING] 👋 User 'Bot13' đã rời khỏi
+[2026-01-17 10:58:42] [ERROR] Không thể gửi message đến Bot14: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 10:58:42] [WARNING] 👋 User 'Bot14' đã rời khỏi
+[2026-01-17 10:58:42] [CLIENT] 💬 Bot15: bot-msg-29 from Bot15
+[2026-01-17 10:58:43] [INFO] 👋 User 'Bot15' đã logout
+[2026-01-17 10:58:43] [WARNING] 👋 User 'Bot15' đã rời khỏi
+[2026-01-17 11:31:16] [SUCCESS] Chat Server Dashboard khởi động
+[2026-01-17 11:31:16] [INFO] Sẵn sàng khởi động server tại 127.0.0.1:5555
+[2026-01-17 11:31:46] [SUCCESS] Server đang chạy trên 127.0.0.1:5555
+[2026-01-17 11:31:46] [INFO] Đang chờ kết nối từ clients...
+[2026-01-17 11:31:52] [CLIENT] Kết nối mới từ 127.0.0.1:56640
+[2026-01-17 11:31:52] [SUCCESS] ✅ User 'A' đã login từ 127.0.0.1:56640
+[2026-01-17 11:32:12] [CLIENT] Kết nối mới từ 127.0.0.1:56646
+[2026-01-17 11:32:12] [SUCCESS] ✅ User 'B' đã login từ 127.0.0.1:56646
+[2026-01-17 11:32:29] [CLIENT] 💬 B: hello
+[2026-01-17 11:32:33] [CLIENT] 💬 A: hi
+[2026-01-17 11:33:07] [INFO] 👋 User 'A' đã logout
+[2026-01-17 11:33:07] [WARNING] 👋 User 'A' đã rời khỏi
+[2026-01-17 11:33:08] [INFO] 👋 User 'B' đã logout
+[2026-01-17 11:33:08] [WARNING] 👋 User 'B' đã rời khỏi
+[2026-01-17 11:33:09] [WARNING] Đang tắt server...
+[2026-01-17 11:33:09] [INFO] Server đã tắt
+[2026-01-17 11:33:22] [SUCCESS] Chat Server Dashboard khởi động
+[2026-01-17 11:33:22] [INFO] Sẵn sàng khởi động server tại 127.0.0.1:5555
+[2026-01-17 11:33:33] [SUCCESS] Server đang chạy trên 127.0.0.1:5555
+[2026-01-17 11:33:33] [INFO] Đang chờ kết nối từ clients...
+[2026-01-17 11:33:37] [CLIENT] Kết nối mới từ 127.0.0.1:56659
+[2026-01-17 11:33:37] [SUCCESS] ✅ User 'A' đã login từ 127.0.0.1:56659
+[2026-01-17 11:33:53] [CLIENT] Kết nối mới từ 127.0.0.1:56665
+[2026-01-17 11:33:53] [SUCCESS] ✅ User 'B' đã login từ 127.0.0.1:56665
+[2026-01-17 11:34:23] [CLIENT] 💬 A: hello
+[2026-01-17 11:34:32] [CLIENT] 💬 B: hi
+[2026-01-17 11:35:35] [CLIENT] Kết nối mới từ 127.0.0.1:56671
+[2026-01-17 11:35:35] [SUCCESS] ✅ User 'Bot1' đã login từ 127.0.0.1:56671
+[2026-01-17 11:35:35] [CLIENT] 💬 Bot1: bot-msg-1 from Bot1
+[2026-01-17 11:35:35] [CLIENT] Kết nối mới từ 127.0.0.1:56672
+[2026-01-17 11:35:35] [SUCCESS] ✅ User 'Bot2' đã login từ 127.0.0.1:56672
+[2026-01-17 11:35:35] [CLIENT] 💬 Bot2: bot-msg-1 from Bot2
+[2026-01-17 11:35:36] [CLIENT] Kết nối mới từ 127.0.0.1:56673
+[2026-01-17 11:35:36] [SUCCESS] ✅ User 'Bot3' đã login từ 127.0.0.1:56673
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot3: bot-msg-1 from Bot3
+[2026-01-17 11:35:36] [CLIENT] Kết nối mới từ 127.0.0.1:56674
+[2026-01-17 11:35:36] [SUCCESS] ✅ User 'Bot4' đã login từ 127.0.0.1:56674
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot4: bot-msg-1 from Bot4
+[2026-01-17 11:35:36] [CLIENT] Kết nối mới từ 127.0.0.1:56675
+[2026-01-17 11:35:36] [SUCCESS] ✅ User 'Bot5' đã login từ 127.0.0.1:56675
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot5: bot-msg-1 from Bot5
+[2026-01-17 11:35:36] [CLIENT] Kết nối mới từ 127.0.0.1:56676
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot2: bot-msg-2 from Bot2
+[2026-01-17 11:35:36] [SUCCESS] ✅ User 'Bot6' đã login từ 127.0.0.1:56676
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot6: bot-msg-1 from Bot6
+[2026-01-17 11:35:36] [CLIENT] Kết nối mới từ 127.0.0.1:56677
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot3: bot-msg-2 from Bot3
+[2026-01-17 11:35:36] [SUCCESS] ✅ User 'Bot7' đã login từ 127.0.0.1:56677
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot7: bot-msg-1 from Bot7
+[2026-01-17 11:35:36] [CLIENT] Kết nối mới từ 127.0.0.1:56678
+[2026-01-17 11:35:36] [SUCCESS] ✅ User 'Bot8' đã login từ 127.0.0.1:56678
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot2: bot-msg-3 from Bot2
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot8: bot-msg-1 from Bot8
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot1: bot-msg-2 from Bot1
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot4: bot-msg-2 from Bot4
+[2026-01-17 11:35:36] [CLIENT] Kết nối mới từ 127.0.0.1:56679
+[2026-01-17 11:35:36] [SUCCESS] ✅ User 'Bot9' đã login từ 127.0.0.1:56679
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot6: bot-msg-2 from Bot6
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot9: bot-msg-1 from Bot9
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot7: bot-msg-2 from Bot7
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot3: bot-msg-3 from Bot3
+[2026-01-17 11:35:36] [CLIENT] Kết nối mới từ 127.0.0.1:56680
+[2026-01-17 11:35:36] [SUCCESS] ✅ User 'Bot10' đã login từ 127.0.0.1:56680
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot10: bot-msg-1 from Bot10
+[2026-01-17 11:35:36] [CLIENT] Kết nối mới từ 127.0.0.1:56681
+[2026-01-17 11:35:36] [SUCCESS] ✅ User 'Bot11' đã login từ 127.0.0.1:56681
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot2: bot-msg-4 from Bot2
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot11: bot-msg-1 from Bot11
+[2026-01-17 11:35:36] [CLIENT] Kết nối mới từ 127.0.0.1:56682
+[2026-01-17 11:35:36] [SUCCESS] ✅ User 'Bot12' đã login từ 127.0.0.1:56682
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot9: bot-msg-2 from Bot9
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot5: bot-msg-2 from Bot5
+[2026-01-17 11:35:36] [CLIENT] 💬 Bot12: bot-msg-1 from Bot12
+[2026-01-17 11:35:37] [CLIENT] Kết nối mới từ 127.0.0.1:56683
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot11: bot-msg-2 from Bot11
+[2026-01-17 11:35:37] [SUCCESS] ✅ User 'Bot13' đã login từ 127.0.0.1:56683
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot10: bot-msg-2 from Bot10
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot13: bot-msg-1 from Bot13
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot8: bot-msg-2 from Bot8
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot7: bot-msg-3 from Bot7
+[2026-01-17 11:35:37] [CLIENT] Kết nối mới từ 127.0.0.1:56684
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot2: bot-msg-5 from Bot2
+[2026-01-17 11:35:37] [SUCCESS] ✅ User 'Bot14' đã login từ 127.0.0.1:56684
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot14: bot-msg-1 from Bot14
+[2026-01-17 11:35:37] [CLIENT] Kết nối mới từ 127.0.0.1:56685
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot1: bot-msg-3 from Bot1
+[2026-01-17 11:35:37] [SUCCESS] ✅ User 'Bot15' đã login từ 127.0.0.1:56685
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot10: bot-msg-3 from Bot10
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot15: bot-msg-1 from Bot15
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot8: bot-msg-3 from Bot8
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot4: bot-msg-3 from Bot4
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot3: bot-msg-4 from Bot3
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot6: bot-msg-3 from Bot6
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot15: bot-msg-2 from Bot15
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot7: bot-msg-4 from Bot7
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot11: bot-msg-3 from Bot11
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot9: bot-msg-3 from Bot9
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot10: bot-msg-4 from Bot10
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot12: bot-msg-2 from Bot12
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot5: bot-msg-3 from Bot5
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot4: bot-msg-4 from Bot4
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot6: bot-msg-4 from Bot6
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot14: bot-msg-2 from Bot14
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot11: bot-msg-4 from Bot11
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot13: bot-msg-2 from Bot13
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot1: bot-msg-4 from Bot1
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot2: bot-msg-6 from Bot2
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot7: bot-msg-5 from Bot7
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot3: bot-msg-5 from Bot3
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot5: bot-msg-4 from Bot5
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot10: bot-msg-5 from Bot10
+[2026-01-17 11:35:37] [CLIENT] 💬 Bot14: bot-msg-3 from Bot14
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot9: bot-msg-4 from Bot9
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot8: bot-msg-4 from Bot8
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot6: bot-msg-5 from Bot6
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot15: bot-msg-3 from Bot15
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot4: bot-msg-5 from Bot4
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot12: bot-msg-3 from Bot12
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot10: bot-msg-6 from Bot10
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot8: bot-msg-5 from Bot8
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot11: bot-msg-5 from Bot11
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot3: bot-msg-6 from Bot3
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot13: bot-msg-3 from Bot13
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot5: bot-msg-5 from Bot5
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot2: bot-msg-7 from Bot2
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot1: bot-msg-5 from Bot1
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot14: bot-msg-4 from Bot14
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot11: bot-msg-6 from Bot11
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot7: bot-msg-6 from Bot7
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot6: bot-msg-6 from Bot6
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot12: bot-msg-4 from Bot12
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot15: bot-msg-4 from Bot15
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot9: bot-msg-5 from Bot9
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot8: bot-msg-6 from Bot8
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot5: bot-msg-6 from Bot5
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot4: bot-msg-6 from Bot4
+[2026-01-17 11:35:38] [CLIENT] 💬 Bot14: bot-msg-5 from Bot14
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot10: bot-msg-7 from Bot10
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot2: bot-msg-8 from Bot2
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot3: bot-msg-7 from Bot3
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot5: bot-msg-7 from Bot5
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot12: bot-msg-5 from Bot12
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot7: bot-msg-7 from Bot7
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot8: bot-msg-7 from Bot8
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot6: bot-msg-7 from Bot6
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot11: bot-msg-7 from Bot11
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot13: bot-msg-4 from Bot13
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot1: bot-msg-6 from Bot1
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot10: bot-msg-8 from Bot10
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot5: bot-msg-8 from Bot5
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot9: bot-msg-6 from Bot9
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot15: bot-msg-5 from Bot15
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot4: bot-msg-7 from Bot4
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot14: bot-msg-6 from Bot14
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot13: bot-msg-5 from Bot13
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot2: bot-msg-9 from Bot2
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot6: bot-msg-8 from Bot6
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot11: bot-msg-8 from Bot11
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot12: bot-msg-6 from Bot12
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot3: bot-msg-8 from Bot3
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot14: bot-msg-7 from Bot14
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot2: bot-msg-10 from Bot2
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot4: bot-msg-8 from Bot4
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot10: bot-msg-9 from Bot10
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot8: bot-msg-8 from Bot8
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot7: bot-msg-8 from Bot7
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot13: bot-msg-6 from Bot13
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot5: bot-msg-9 from Bot5
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot15: bot-msg-6 from Bot15
+[2026-01-17 11:35:39] [CLIENT] 💬 Bot1: bot-msg-7 from Bot1
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot3: bot-msg-9 from Bot3
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot9: bot-msg-7 from Bot9
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot12: bot-msg-7 from Bot12
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot14: bot-msg-8 from Bot14
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot15: bot-msg-7 from Bot15
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot11: bot-msg-9 from Bot11
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot8: bot-msg-9 from Bot8
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot7: bot-msg-9 from Bot7
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot4: bot-msg-9 from Bot4
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot5: bot-msg-10 from Bot5
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot1: bot-msg-8 from Bot1
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot6: bot-msg-9 from Bot6
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot2: bot-msg-11 from Bot2
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot13: bot-msg-7 from Bot13
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot4: bot-msg-10 from Bot4
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot9: bot-msg-8 from Bot9
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot3: bot-msg-10 from Bot3
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot7: bot-msg-10 from Bot7
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot10: bot-msg-10 from Bot10
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot8: bot-msg-10 from Bot8
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot13: bot-msg-8 from Bot13
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot6: bot-msg-10 from Bot6
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot12: bot-msg-8 from Bot12
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot15: bot-msg-8 from Bot15
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot11: bot-msg-10 from Bot11
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot14: bot-msg-9 from Bot14
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot7: bot-msg-11 from Bot7
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot5: bot-msg-11 from Bot5
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot10: bot-msg-11 from Bot10
+[2026-01-17 11:35:40] [CLIENT] 💬 Bot1: bot-msg-9 from Bot1
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot15: bot-msg-9 from Bot15
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot8: bot-msg-11 from Bot8
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot2: bot-msg-12 from Bot2
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot3: bot-msg-11 from Bot3
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot4: bot-msg-11 from Bot4
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot9: bot-msg-9 from Bot9
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot11: bot-msg-11 from Bot11
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot13: bot-msg-9 from Bot13
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot5: bot-msg-12 from Bot5
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot8: bot-msg-12 from Bot8
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot6: bot-msg-11 from Bot6
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot12: bot-msg-9 from Bot12
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot15: bot-msg-10 from Bot15
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot1: bot-msg-10 from Bot1
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot3: bot-msg-12 from Bot3
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot9: bot-msg-10 from Bot9
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot10: bot-msg-12 from Bot10
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot7: bot-msg-12 from Bot7
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot2: bot-msg-13 from Bot2
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot12: bot-msg-10 from Bot12
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot13: bot-msg-10 from Bot13
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot7: bot-msg-13 from Bot7
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot14: bot-msg-10 from Bot14
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot3: bot-msg-13 from Bot3
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot4: bot-msg-12 from Bot4
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot11: bot-msg-12 from Bot11
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot1: bot-msg-11 from Bot1
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot8: bot-msg-13 from Bot8
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot12: bot-msg-11 from Bot12
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot6: bot-msg-12 from Bot6
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot5: bot-msg-13 from Bot5
+[2026-01-17 11:35:41] [CLIENT] 💬 Bot9: bot-msg-11 from Bot9
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot15: bot-msg-11 from Bot15
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot10: bot-msg-13 from Bot10
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot13: bot-msg-11 from Bot13
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot8: bot-msg-14 from Bot8
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot9: bot-msg-12 from Bot9
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot2: bot-msg-14 from Bot2
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot11: bot-msg-13 from Bot11
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot14: bot-msg-11 from Bot14
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot7: bot-msg-14 from Bot7
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot3: bot-msg-14 from Bot3
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot4: bot-msg-13 from Bot4
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot8: bot-msg-15 from Bot8
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot2: bot-msg-15 from Bot2
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot13: bot-msg-12 from Bot13
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot5: bot-msg-14 from Bot5
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot14: bot-msg-12 from Bot14
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot6: bot-msg-13 from Bot6
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot1: bot-msg-12 from Bot1
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot12: bot-msg-12 from Bot12
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot15: bot-msg-12 from Bot15
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot11: bot-msg-14 from Bot11
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot3: bot-msg-15 from Bot3
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot10: bot-msg-14 from Bot10
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot2: bot-msg-16 from Bot2
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot14: bot-msg-13 from Bot14
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot9: bot-msg-13 from Bot9
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot6: bot-msg-14 from Bot6
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot7: bot-msg-15 from Bot7
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot13: bot-msg-13 from Bot13
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot3: bot-msg-16 from Bot3
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot2: bot-msg-17 from Bot2
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot12: bot-msg-13 from Bot12
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot8: bot-msg-16 from Bot8
+[2026-01-17 11:35:42] [CLIENT] 💬 Bot4: bot-msg-14 from Bot4
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot11: bot-msg-15 from Bot11
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot10: bot-msg-15 from Bot10
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot7: bot-msg-16 from Bot7
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot6: bot-msg-15 from Bot6
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot15: bot-msg-13 from Bot15
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot5: bot-msg-15 from Bot5
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot3: bot-msg-17 from Bot3
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot1: bot-msg-13 from Bot1
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot9: bot-msg-14 from Bot9
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot14: bot-msg-14 from Bot14
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot11: bot-msg-16 from Bot11
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot12: bot-msg-14 from Bot12
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot15: bot-msg-14 from Bot15
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot13: bot-msg-14 from Bot13
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot6: bot-msg-16 from Bot6
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot4: bot-msg-15 from Bot4
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot2: bot-msg-18 from Bot2
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot14: bot-msg-15 from Bot14
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot8: bot-msg-17 from Bot8
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot3: bot-msg-18 from Bot3
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot12: bot-msg-15 from Bot12
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot7: bot-msg-17 from Bot7
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot10: bot-msg-16 from Bot10
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot9: bot-msg-15 from Bot9
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot6: bot-msg-17 from Bot6
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot15: bot-msg-15 from Bot15
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot11: bot-msg-17 from Bot11
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot13: bot-msg-15 from Bot13
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot1: bot-msg-14 from Bot1
+[2026-01-17 11:35:43] [CLIENT] 💬 Bot5: bot-msg-16 from Bot5
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot2: bot-msg-19 from Bot2
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot10: bot-msg-17 from Bot10
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot4: bot-msg-16 from Bot4
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot15: bot-msg-16 from Bot15
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot7: bot-msg-18 from Bot7
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot12: bot-msg-16 from Bot12
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot13: bot-msg-16 from Bot13
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot9: bot-msg-16 from Bot9
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot3: bot-msg-19 from Bot3
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot14: bot-msg-16 from Bot14
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot2: bot-msg-20 from Bot2
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot1: bot-msg-15 from Bot1
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot10: bot-msg-18 from Bot10
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot8: bot-msg-18 from Bot8
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot6: bot-msg-18 from Bot6
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot9: bot-msg-17 from Bot9
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot5: bot-msg-17 from Bot5
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot15: bot-msg-17 from Bot15
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot3: bot-msg-20 from Bot3
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot13: bot-msg-17 from Bot13
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot11: bot-msg-18 from Bot11
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot4: bot-msg-17 from Bot4
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot12: bot-msg-17 from Bot12
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot1: bot-msg-16 from Bot1
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot2: bot-msg-21 from Bot2
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot14: bot-msg-17 from Bot14
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot2: bot-msg-22 from Bot2
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot5: bot-msg-18 from Bot5
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot13: bot-msg-18 from Bot13
+[2026-01-17 11:35:44] [CLIENT] 💬 Bot15: bot-msg-18 from Bot15
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot6: bot-msg-19 from Bot6
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot8: bot-msg-19 from Bot8
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot12: bot-msg-18 from Bot12
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot10: bot-msg-19 from Bot10
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot4: bot-msg-18 from Bot4
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot9: bot-msg-18 from Bot9
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot11: bot-msg-19 from Bot11
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot14: bot-msg-18 from Bot14
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot5: bot-msg-19 from Bot5
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot15: bot-msg-19 from Bot15
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot2: bot-msg-23 from Bot2
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot3: bot-msg-21 from Bot3
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot6: bot-msg-20 from Bot6
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot1: bot-msg-17 from Bot1
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot7: bot-msg-20 from Bot7
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot10: bot-msg-20 from Bot10
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot3: bot-msg-22 from Bot3
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot13: bot-msg-19 from Bot13
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot14: bot-msg-19 from Bot14
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot7: bot-msg-21 from Bot7
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot11: bot-msg-20 from Bot11
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot12: bot-msg-19 from Bot12
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot4: bot-msg-19 from Bot4
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot8: bot-msg-20 from Bot8
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot2: bot-msg-24 from Bot2
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot9: bot-msg-19 from Bot9
+[2026-01-17 11:35:45] [CLIENT] 💬 Bot6: bot-msg-21 from Bot6
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot7: bot-msg-22 from Bot7
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot8: bot-msg-21 from Bot8
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot3: bot-msg-23 from Bot3
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot5: bot-msg-20 from Bot5
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot15: bot-msg-20 from Bot15
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot14: bot-msg-20 from Bot14
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot1: bot-msg-18 from Bot1
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot10: bot-msg-21 from Bot10
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot2: bot-msg-25 from Bot2
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot8: bot-msg-22 from Bot8
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot9: bot-msg-20 from Bot9
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot7: bot-msg-23 from Bot7
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot13: bot-msg-20 from Bot13
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot5: bot-msg-21 from Bot5
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot12: bot-msg-20 from Bot12
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot4: bot-msg-20 from Bot4
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot6: bot-msg-22 from Bot6
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot11: bot-msg-21 from Bot11
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot14: bot-msg-21 from Bot14
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot15: bot-msg-21 from Bot15
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot11: bot-msg-22 from Bot11
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot7: bot-msg-24 from Bot7
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot8: bot-msg-23 from Bot8
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot3: bot-msg-24 from Bot3
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot9: bot-msg-21 from Bot9
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot10: bot-msg-22 from Bot10
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot15: bot-msg-22 from Bot15
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot2: bot-msg-26 from Bot2
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot13: bot-msg-21 from Bot13
+[2026-01-17 11:35:46] [CLIENT] 💬 Bot6: bot-msg-23 from Bot6
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot1: bot-msg-19 from Bot1
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot14: bot-msg-22 from Bot14
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot8: bot-msg-24 from Bot8
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot11: bot-msg-23 from Bot11
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot12: bot-msg-21 from Bot12
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot3: bot-msg-25 from Bot3
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot7: bot-msg-25 from Bot7
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot5: bot-msg-22 from Bot5
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot4: bot-msg-21 from Bot4
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot15: bot-msg-23 from Bot15
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot13: bot-msg-22 from Bot13
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot10: bot-msg-23 from Bot10
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot2: bot-msg-27 from Bot2
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot11: bot-msg-24 from Bot11
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot9: bot-msg-22 from Bot9
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot12: bot-msg-22 from Bot12
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot5: bot-msg-23 from Bot5
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot15: bot-msg-24 from Bot15
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot1: bot-msg-20 from Bot1
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot10: bot-msg-24 from Bot10
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot8: bot-msg-25 from Bot8
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot5: bot-msg-24 from Bot5
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot11: bot-msg-25 from Bot11
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot2: bot-msg-28 from Bot2
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot6: bot-msg-24 from Bot6
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot4: bot-msg-22 from Bot4
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot14: bot-msg-23 from Bot14
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot3: bot-msg-26 from Bot3
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot13: bot-msg-23 from Bot13
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot10: bot-msg-25 from Bot10
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot9: bot-msg-23 from Bot9
+[2026-01-17 11:35:47] [CLIENT] 💬 Bot7: bot-msg-26 from Bot7
+[2026-01-17 11:35:48] [INFO] 👋 User 'Bot1' đã logout
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot11: bot-msg-26 from Bot11
+[2026-01-17 11:35:48] [WARNING] 👋 User 'Bot1' đã rời khỏi
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot12: bot-msg-23 from Bot12
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot6: bot-msg-25 from Bot6
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot14: bot-msg-24 from Bot14
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot8: bot-msg-26 from Bot8
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot15: bot-msg-25 from Bot15
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot10: bot-msg-26 from Bot10
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot13: bot-msg-24 from Bot13
+[2026-01-17 11:35:48] [INFO] 👋 User 'Bot5' đã logout
+[2026-01-17 11:35:48] [INFO] 👋 User 'Bot4' đã logout
+[2026-01-17 11:35:48] [ERROR] Không thể gửi message đến Bot5: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 11:35:48] [WARNING] 👋 User 'Bot5' đã rời khỏi
+[2026-01-17 11:35:48] [WARNING] 👋 User 'Bot4' đã rời khỏi
+[2026-01-17 11:35:48] [INFO] 👋 User 'Bot2' đã logout
+[2026-01-17 11:35:48] [ERROR] Không thể gửi message đến Bot2: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 11:35:48] [WARNING] 👋 User 'Bot2' đã rời khỏi
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot9: bot-msg-24 from Bot9
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot12: bot-msg-24 from Bot12
+[2026-01-17 11:35:48] [INFO] 👋 User 'Bot3' đã logout
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot10: bot-msg-27 from Bot10
+[2026-01-17 11:35:48] [ERROR] Không thể gửi message đến Bot3: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 11:35:48] [INFO] 👋 User 'Bot7' đã logout
+[2026-01-17 11:35:48] [WARNING] 👋 User 'Bot3' đã rời khỏi
+[2026-01-17 11:35:48] [ERROR] Không thể gửi message đến Bot7: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 11:35:48] [ERROR] Không thể gửi message đến Bot7: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 11:35:48] [WARNING] 👋 User 'Bot7' đã rời khỏi
+[2026-01-17 11:35:48] [INFO] 👋 User 'Bot6' đã logout
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot11: bot-msg-27 from Bot11
+[2026-01-17 11:35:48] [WARNING] 👋 User 'Bot6' đã rời khỏi
+[2026-01-17 11:35:48] [INFO] 👋 User 'Bot8' đã logout
+[2026-01-17 11:35:48] [INFO] 👋 User 'Bot9' đã logout
+[2026-01-17 11:35:48] [WARNING] 👋 User 'Bot8' đã rời khỏi
+[2026-01-17 11:35:48] [CLIENT] 💬 Bot14: bot-msg-25 from Bot14
+[2026-01-17 11:35:48] [WARNING] 👋 User 'Bot9' đã rời khỏi
+[2026-01-17 11:35:49] [CLIENT] 💬 Bot15: bot-msg-26 from Bot15
+[2026-01-17 11:35:49] [INFO] 👋 User 'Bot12' đã logout
+[2026-01-17 11:35:49] [INFO] 👋 User 'Bot10' đã logout
+[2026-01-17 11:35:49] [ERROR] Không thể gửi message đến Bot10: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 11:35:49] [WARNING] 👋 User 'Bot12' đã rời khỏi
+[2026-01-17 11:35:49] [WARNING] 👋 User 'Bot10' đã rời khỏi
+[2026-01-17 11:35:49] [INFO] 👋 User 'Bot13' đã logout
+[2026-01-17 11:35:49] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 11:35:49] [ERROR] Không thể gửi message đến Bot13: [WinError 10054] An existing connection was forcibly closed by the remote host
+[2026-01-17 11:35:49] [WARNING] 👋 User 'Bot13' đã rời khỏi
+[2026-01-17 11:35:49] [INFO] 👋 User 'Bot11' đã logout
+[2026-01-17 11:35:49] [WARNING] 👋 User 'Bot11' đã rời khỏi
+[2026-01-17 11:35:49] [INFO] 👋 User 'Bot14' đã logout
+[2026-01-17 11:35:49] [WARNING] 👋 User 'Bot14' đã rời khỏi
+[2026-01-17 11:35:49] [INFO] 👋 User 'Bot15' đã logout
+[2026-01-17 11:35:49] [WARNING] 👋 User 'Bot15' đã rời khỏi

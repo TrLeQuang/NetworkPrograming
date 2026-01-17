@@ -1,4 +1,4 @@
-# ui_login.py
+﻿# ui_login.py
 import tkinter as tk
 from tkinter import messagebox
 from client_network import ClientNetwork
@@ -100,3 +100,4 @@ class LoginUI:
 
 if __name__ == "__main__":
     LoginUI().run()
+

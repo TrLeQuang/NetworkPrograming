@@ -111,3 +111,4 @@ def build_error(msg: str) -> dict:
         "type": "error",
         "msg": msg
     }
+

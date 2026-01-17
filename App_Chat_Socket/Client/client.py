@@ -1,4 +1,7 @@
-﻿import sys
+﻿import os, sys
+sys.path.append(os.path.dirname(__file__))
+
+import sys
 import threading
 from client_network import ClientNetwork
 

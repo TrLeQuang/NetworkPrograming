@@ -1,4 +1,4 @@
-import json
+﻿import json
 from datetime import datetime
 
 ENCODING = "utf-8"
