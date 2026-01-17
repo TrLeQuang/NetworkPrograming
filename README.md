@@ -209,3 +209,53 @@ Thành viên 4: Phan Quốc Huy – Phụ trách Client UI Desktop (Tkinter)
 Các file
 ui_chat.py            
 ui_logiin.pyw   #mở giao diện login ==> giao diện chat
+
+## Thành viên 5: Task 5 – Kiểm thử, Thực nghiệm và Đánh giá hệ thống
+### 1. Mục tiêu
+Task 5 nhằm kiểm thử khả năng hoạt động thực tế của ứng dụng Chat Socket, tập trung vào:
+- Khả năng xử lý nhiều client đồng thời
+- Tính ổn định của server đa luồng
+- Cơ chế broadcast tin nhắn
+- Ghi nhận kết quả thông qua log hệ thống
+
+---
+
+### 2. Kiểm thử thủ công (Manual Test)
+- Chạy `server.py` và khởi động server tại `127.0.0.1:5555`
+- Chạy `ui_login.py` phía Client
+- Đăng nhập nhiều user khác nhau và gửi tin nhắn
+- Quan sát:
+  - Tin nhắn được broadcast đến tất cả client
+  - Danh sách user online cập nhật theo thời gian thực
+  - Server không bị treo khi nhiều client hoạt động
+
+---
+
+### 3. Kiểm thử tự động (Stress Test)
+- Sử dụng file `test_client.py` để mô phỏng nhiều client kết nối cùng lúc
+- Mỗi test client tự động:
+  - Kết nối server
+  - Login với username Bot
+  - Gửi tin nhắn
+  - Logout sau một khoảng thời gian
+
+Cách chạy:
+```bash
+python Client/test_client.py
+
+### 4. Vai trò các file trong Task 5
+#### 4.1. File server.py
+- Là entry point của Server
+- Khởi tạo TCP socket và lắng nghe nhiều client
+- Quản lý danh sách connection socket và user online
+- Cập nhật trạng thái Server Dashboard (Online / Connection)
+- Broadcast message tới các client
+- Ghi log hoạt động server ra file (Server/logs/)
+
+#### 4.2. File server_handler.py
+- Định nghĩa lớp ClientHandler
+- Mỗi client được xử lý trong một thread riêng
+- Nhận và xử lý message theo JSON Protocol
+- Xử lý login, logout, chat message
+- Broadcast thông báo join/leave và danh sách user
+- Đảm bảo server hoạt động ổn định khi stress test nhiều client
