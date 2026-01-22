@@ -5,20 +5,11 @@ ENCODING = "utf-8"
 
 
 def encode_message(data: dict) -> bytes:
-    """
-    Chuyển dict Python thành bytes JSON để gửi qua socket.
-    Dùng chung cho cả server và client.
-    """
-    # ensure_ascii=False để giữ tiếng Việt không bị \\uXXXX
     text = json.dumps(data, ensure_ascii=False)
     return text.encode(ENCODING)
 
 
 def decode_message(raw: bytes) -> dict | None:
-    """
-    Chuyển bytes nhận được thành dict JSON.
-    Trả về None nếu lỗi (không phải JSON hợp lệ).
-    """
     try:
         text = raw.decode(ENCODING)
         return json.loads(text)
@@ -26,89 +17,65 @@ def decode_message(raw: bytes) -> dict | None:
         return None
 
 
-def current_timestamp() -> str:
-    """Trả về timestamp dạng chuỗi, ví dụ '2026-01-13 14:30:00'."""
+def now_ts() -> str:
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 
-# ========== Các hàm build message ==========
-
+# ===== Basic =====
 def build_login(user: str) -> dict:
-    """
-    Gói login client gửi lên server.
-    Ví dụ: { "type": "login", "user": "A" }
-    """
-    return {
-        "type": "login",
-        "user": user
-    }
+    return {"type": "login", "user": user}
 
 
 def build_logout(user: str) -> dict:
-    """
-    Gói logout client gửi lên server.
-    Ví dụ: { "type": "logout", "user": "A" }
-    """
-    return {
-        "type": "logout",
-        "user": user
-    }
-
-
-def build_chat_message(sender: str, msg: str) -> dict:
-    """
-    Gói chat server broadcast tới mọi client.
-    Ví dụ:
-    {
-      "type": "message",
-      "from": "A",
-      "msg": "hi",
-      "timestamp": "2026-01-13 14:30:00"
-    }
-    """
-    return {
-        "type": "message",
-        "from": sender,
-        "msg": msg,
-        "timestamp": current_timestamp()
-    }
-
-
-def build_system_message(msg: str) -> dict:
-    """
-    Gói system message (join/leave, thông báo).
-    Ví dụ:
-    {
-      "type": "system",
-      "msg": "A đã tham gia phòng chat",
-      "timestamp": "2026-01-13 14:30:00"
-    }
-    """
-    return {
-        "type": "system",
-        "msg": msg,
-        "timestamp": current_timestamp()
-    }
+    return {"type": "logout", "user": user}
 
 
 def build_user_list(users: list[str]) -> dict:
-    """
-    Gói danh sách user online server gửi cho client.
-    Ví dụ: { "type": "user_list", "users": ["A", "B"] }
-    """
-    return {
-        "type": "user_list",
-        "users": users
-    }
+    return {"type": "user_list", "users": users}
+
+
+def build_system(msg: str) -> dict:
+    return {"type": "system", "msg": msg, "timestamp": now_ts()}
 
 
 def build_error(msg: str) -> dict:
-    """
-    Gói báo lỗi từ server gửi cho client.
-    Ví dụ: { "type": "error", "msg": "Username đã tồn tại" }
-    """
+    return {"type": "error", "msg": msg}
+
+
+# ===== Private 1-1 =====
+def build_private(sender: str, to_user: str, msg: str) -> dict:
     return {
-        "type": "error",
-        "msg": msg
+        "type": "private",
+        "from": sender,
+        "to": to_user,
+        "msg": msg,
+        "timestamp": now_ts(),
     }
 
+
+# ===== Rooms =====
+def build_room_list(rooms_snapshot: list[dict]) -> dict:
+    # rooms_snapshot: [{"name":"room1","members":["A","B"]}, ...]
+    return {"type": "room_list", "rooms": rooms_snapshot}
+
+
+def build_create_room(user: str, room: str) -> dict:
+    return {"type": "create_room", "user": user, "room": room}
+
+
+def build_join_room(user: str, room: str) -> dict:
+    return {"type": "join_room", "user": user, "room": room}
+
+
+def build_leave_room(user: str, room: str) -> dict:
+    return {"type": "leave_room", "user": user, "room": room}
+
+
+def build_group(room: str, sender: str, msg: str) -> dict:
+    return {
+        "type": "group",
+        "room": room,
+        "from": sender,
+        "msg": msg,
+        "timestamp": now_ts(),
+    }

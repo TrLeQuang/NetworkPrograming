@@ -1,173 +1,246 @@
-﻿import threading
-import os
+﻿import os
+import sys
+import threading
 import importlib.util
 
-# ===== Load protocol.py bằng đường dẫn tuyệt đối (ổn định trong VS2022) =====
-_THIS_DIR = os.path.dirname(os.path.abspath(__file__))
-_PROTOCOL_PATH = os.path.join(_THIS_DIR, "protocol.py")
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+if THIS_DIR not in sys.path:
+    sys.path.insert(0, THIS_DIR)
 
-_spec = importlib.util.spec_from_file_location("server_protocol", _PROTOCOL_PATH)
-_protocol = importlib.util.module_from_spec(_spec)
-_spec.loader.exec_module(_protocol)
+# Load protocol.py bằng path tuyệt đối (VS2022-safe)
+PROTOCOL_PATH = os.path.join(THIS_DIR, "protocol.py")
+if not os.path.exists(PROTOCOL_PATH):
+    raise FileNotFoundError(f"Không tìm thấy protocol.py tại: {PROTOCOL_PATH}")
 
-encode_message = _protocol.encode_message
-decode_message = _protocol.decode_message
-build_chat_message = _protocol.build_chat_message
-build_system_message = _protocol.build_system_message
-build_user_list = _protocol.build_user_list
-build_error = _protocol.build_error
+spec = importlib.util.spec_from_file_location("server_protocol", PROTOCOL_PATH)
+protocol = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(protocol)
+
+# map function
+decode_message = protocol.decode_message
+encode_message = protocol.encode_message
+build_error = protocol.build_error
+build_private = protocol.build_private
+build_group = protocol.build_group
+
+
 
 
 class ClientHandler(threading.Thread):
-    """
-    Xử lý kết nối của từng client.
-    Thread riêng cho mỗi client.
-    Tương thích với Protocol JSON.
-    """
-
     def __init__(self, client_socket, address, server, user_manager):
-        super().__init__()
+        super().__init__(daemon=True)
         self.client_socket = client_socket
         self.address = address
         self.server = server
         self.user_manager = user_manager
-
         self.username = None
         self.running = True
 
     def run(self):
-        """Thread chính xử lý client"""
+        buffer = b""
         try:
-            buffer = b""
-
             while self.running:
-                try:
-                    chunk = self.client_socket.recv(4096)
-                    if not chunk:
-                        break
-
-                    buffer += chunk
-
-                    while b"\n" in buffer:
-                        line, buffer = buffer.split(b"\n", 1)
-                        if line:
-                            self._process_message(line)
-
-                except Exception as e:
-                    self.server.log(
-                        f"Lỗi khi nhận message từ {self.username or self.address}: {e}",
-                        "ERROR",
-                    )
+                chunk = self.client_socket.recv(4096)
+                if not chunk:
                     break
+                buffer += chunk
 
+                while b"\n" in buffer:
+                    line, buffer = buffer.split(b"\n", 1)
+                    if line:
+                        self._handle_one(line)
         except Exception as e:
-            self.server.log(f"Lỗi với client {self.address}: {e}", "ERROR")
-
+            self.server.log(f"Lỗi recv từ {self.username or self.address}: {e}", "ERROR")
         finally:
             self.close()
 
-    def _process_message(self, raw: bytes):
+    def _handle_one(self, raw: bytes):
         data = decode_message(raw)
-
         if data is None:
-            self.server.log(
-                f"Message không hợp lệ từ {self.username or self.address}", "WARNING"
-            )
             return
 
-        msg_type = data.get("type")
+        t = data.get("type")
 
-        if msg_type == "login":
-            self._handle_login(data)
-        elif msg_type == "logout":
-            self._handle_logout(data)
-        elif msg_type == "message":
-            self._handle_chat_message(data)
+        if t == "login":
+            self._login(data)
+        elif t == "logout":
+            self.running = False
+
+        elif t == "private":
+            self._private(data)
+
+        elif t == "create_room":
+            self._create_room(data)
+
+        elif t == "join_room":
+            self._join_room(data)
+
+        elif t == "leave_room":
+            self._leave_room(data)
+
+        elif t == "group":
+            self._group(data)
+
         else:
-            self.server.log(f"Message type không xác định: {msg_type}", "WARNING")
+            pass
 
-    def _handle_login(self, data: dict):
-        username = data.get("user", "").strip()
-
+    # ===== Login =====
+    def _login(self, data: dict):
+        username = (data.get("user") or "").strip()
         if not username:
             self.send_raw(build_error("Username không hợp lệ"))
             return
 
-        # Kiểm tra trùng username
         if self.user_manager.has_user(username):
-            self.send_raw(build_error("Username đã tồn tại, vui lòng chọn tên khác"))
-            self.server.log(f"❌ Login thất bại: '{username}' đã tồn tại", "WARNING")
+            self.send_raw(build_error("Username đã tồn tại"))
             return
 
-        # Add user online
         self.username = username
         self.user_manager.add_user(username, self)
 
-        self.server.log(
-            f"✅ User '{username}' đã login từ {self.address[0]}:{self.address[1]}",
-            "SUCCESS",
-        )
+        self.server.log(f"✅ {username} login ({self.address[0]}:{self.address[1]})", "SUCCESS")
+        self.server.broadcast_system(f"{username} đã tham gia")
 
-        # Broadcast join + user_list
-        self.server.broadcast(build_system_message(f"{username} đã tham gia phòng chat"))
-        self._broadcast_user_list()
+        self.server.send_user_list_all()
+        self.server.send_room_list_all()
+        self.server.update_counts()
 
-        # Refresh count ngay sau login
-        self.server.refresh_online_count()
-
-    def _handle_logout(self, data: dict):
-        username = data.get("user", "")
-        self.server.log(f"👋 User '{username}' đã logout", "INFO")
-        self.running = False
-
-    def _handle_chat_message(self, data: dict):
-        username = data.get("user", "Unknown")
-        msg = data.get("msg", "")
-
-        if not msg.strip():
+    # ===== Private 1-1 =====
+    def _private(self, data: dict):
+        if not self.username:
+            self.send_raw(build_error("Bạn chưa login"))
             return
 
-        self.server.log(f"💬 {username}: {msg}", "CLIENT")
-        self.server.broadcast(build_chat_message(username, msg))
+        to_user = (data.get("to") or "").strip()
+        msg = (data.get("msg") or "").strip()
+        if not to_user:
+            self.send_raw(build_error("Thiếu người nhận"))
+            return
+        if not msg:
+            return
+        if to_user == self.username:
+            self.send_raw(build_error("Không thể nhắn cho chính mình"))
+            return
 
+        target = self.user_manager.get_handler(to_user)
+        if not target:
+            self.send_raw(build_error(f"User '{to_user}' không online"))
+            return
+
+        payload = build_private(self.username, to_user, msg)
+
+        # gửi cho người nhận + echo cho người gửi
+        target.send_raw(payload)
+        self.send_raw(payload)
+
+        self.server.log(f"💬 PRIVATE {self.username} -> {to_user}: {msg}", "CLIENT")
+
+    # ===== Rooms =====
+    def _create_room(self, data: dict):
+        if not self.username:
+            self.send_raw(build_error("Bạn chưa login"))
+            return
+
+        room = (data.get("room") or "").strip()
+        if not room:
+            self.send_raw(build_error("Tên phòng không hợp lệ"))
+            return
+
+        ok = self.server.room_manager.create_room(room)
+        if not ok:
+            self.send_raw(build_error("Phòng đã tồn tại"))
+            return
+
+        # creator auto-join cho tiện dùng
+        self.server.room_manager.join(room, self.username)
+
+        self.server.log(f"🧩 {self.username} tạo phòng '{room}'", "SUCCESS")
+        self.server.broadcast_system(f"{self.username} đã tạo phòng '{room}'")
+        self.server.send_room_list_all()
+
+    def _join_room(self, data: dict):
+        if not self.username:
+            self.send_raw(build_error("Bạn chưa login"))
+            return
+
+        room = (data.get("room") or "").strip()
+        if not self.server.room_manager.room_exists(room):
+            self.send_raw(build_error("Phòng không tồn tại"))
+            return
+
+        self.server.room_manager.join(room, self.username)
+        self.server.log(f"➕ {self.username} join '{room}'", "INFO")
+        self.server.broadcast_system(f"{self.username} đã join phòng '{room}'")
+        self.server.send_room_list_all()
+
+    def _leave_room(self, data: dict):
+        if not self.username:
+            self.send_raw(build_error("Bạn chưa login"))
+            return
+
+        room = (data.get("room") or "").strip()
+        if not self.server.room_manager.room_exists(room):
+            self.send_raw(build_error("Phòng không tồn tại"))
+            return
+
+        self.server.room_manager.leave(room, self.username)
+        self.server.log(f"➖ {self.username} leave '{room}'", "INFO")
+        self.server.broadcast_system(f"{self.username} đã rời phòng '{room}'")
+        self.server.send_room_list_all()
+
+    def _group(self, data: dict):
+        if not self.username:
+            self.send_raw(build_error("Bạn chưa login"))
+            return
+
+        room = (data.get("room") or "").strip()
+        msg = (data.get("msg") or "").strip()
+        if not room:
+            self.send_raw(build_error("Thiếu tên phòng"))
+            return
+        if not msg:
+            return
+
+        members = self.server.room_manager.members(room)
+        if self.username not in members:
+            self.send_raw(build_error("Bạn chưa join phòng này"))
+            return
+
+        payload = build_group(room, self.username, msg)
+        self.server.broadcast_room(room, payload)
+
+        self.server.log(f"💬 ROOM({room}) {self.username}: {msg}", "CLIENT")
+
+    # ===== Send helpers =====
     def send_raw(self, data: dict):
-        """Gửi dict data (JSON bytes) kèm delimiter \\n"""
         try:
-            raw_bytes = encode_message(data)
-            self.client_socket.sendall(raw_bytes + b"\n")
-        except Exception as e:
-            self.server.log(f"Không thể gửi message đến {self.username}: {e}", "ERROR")
+            self.client_socket.sendall(encode_message(data) + b"\n")
+        except Exception:
             self.running = False
 
-    def _broadcast_user_list(self):
-        online_users = self.user_manager.get_online_users()
-        self.server.broadcast(build_user_list(online_users))
-
     def close(self):
-        """Đóng kết nối và cleanup"""
         self.running = False
 
-        # Nếu user đã login thì remove + broadcast leave
         if self.username:
+            # remove user online + remove from rooms
             try:
-                self.user_manager.remove_user(self.username)
-            except:
+                self.server.room_manager.remove_user_everywhere(self.username)
+            except Exception:
                 pass
 
-            leave_msg = build_system_message(f"{self.username} đã rời khỏi phòng chat")
-            self.server.log(f"👋 User '{self.username}' đã rời khỏi", "WARNING")
-            self.server.broadcast(leave_msg)
+            try:
+                self.user_manager.remove_user(self.username)
+            except Exception:
+                pass
 
-            # Update user list
-            self._broadcast_user_list()
+            self.server.broadcast_system(f"{self.username} đã rời khỏi")
+            self.server.send_user_list_all()
+            self.server.send_room_list_all()
+            self.server.update_counts()
 
-        # Remove khỏi list connections
         self.server.remove_client(self)
-
-        # Refresh count sau khi close
-        self.server.refresh_online_count()
 
         try:
             self.client_socket.close()
-        except:
+        except Exception:
             pass
