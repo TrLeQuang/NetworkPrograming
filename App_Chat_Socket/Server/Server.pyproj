@@ -24,6 +24,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="chat_logger.py" />
+    <Compile Include="logger.py" />
     <Compile Include="protocol.py" />
     <Compile Include="room_manager.py" />
     <Compile Include="server.py" />

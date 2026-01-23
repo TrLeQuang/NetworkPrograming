@@ -1,14 +1,11 @@
-﻿# ui_login.py
-import tkinter as tk
+﻿import tkinter as tk
 from tkinter import messagebox
 from client_network import ClientNetwork
 from ui_chat import ChatUI
 
-
 class LoginUI:
     def __init__(self):
         self.network = ClientNetwork()
-
         self.root = tk.Tk()
         self.root.title("Chat App - Login")
         self.root.geometry("320x220")
@@ -100,4 +97,3 @@ class LoginUI:
 
 if __name__ == "__main__":
     LoginUI().run()
-

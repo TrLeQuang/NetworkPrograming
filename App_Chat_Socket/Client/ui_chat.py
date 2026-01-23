@@ -1,7 +1,9 @@
 ﻿import tkinter as tk
 import re
-from tkinter import scrolledtext, messagebox, simpledialog
-
+import os
+from tkinter import scrolledtext, messagebox, simpledialog, filedialog
+from PIL import Image, ImageTk
+from protocol import decode_file
 
 class ChatUI:
     def __init__(self, network, username: str):
@@ -9,20 +11,19 @@ class ChatUI:
         self.username = username
 
         # state
-        self.dm_target = None            # user đang chọn để chat riêng
-        self.selected_room = None        # room đang chọn ở danh sách
-        self.joined_rooms = set()        # room mà user đã join (từ room_list server)
-
-        # lịch sử theo hội thoại
-        self.hist = {}  # key -> list[(text, tag)], key = "DM:<u>" hoặc "ROOM:<r>"
-
-        # placeholder
+        self.dm_target = None
+        self.selected_room = None
+        self.joined_rooms = set()
+        self.hist = {}  # Lưu text history
         self._placeholder_text = "Nhập tin nhắn..."
+        
+        # File attachment
+        self.attached_file = None
 
         # GUI
         self.root = tk.Tk()
         self.root.title(f"Chat App - {username}")
-        self.root.geometry("1050x560")
+        self.root.geometry("1050x600")
         self.root.minsize(900, 500)
 
         main = tk.Frame(self.root)
@@ -33,7 +34,6 @@ class ChatUI:
         left.pack(side=tk.LEFT, fill=tk.Y)
         left.pack_propagate(False)
 
-        # ===== Private area =====
         tk.Label(left, text="CHAT RIÊNG (1-1)", bg="#2f3136", fg="white",
                  font=("Segoe UI", 11, "bold")).pack(pady=(12, 6))
 
@@ -47,7 +47,6 @@ class ChatUI:
                                  fg="#b9bbbe", font=("Segoe UI", 10))
         self.dm_label.pack(pady=(6, 10))
 
-        # ===== Room area =====
         tk.Label(left, text="CHAT PHÒNG", bg="#2f3136", fg="white",
                  font=("Segoe UI", 11, "bold")).pack(pady=(4, 6))
 
@@ -90,14 +89,34 @@ class ChatUI:
         self.chat_area.tag_config("other", justify="left", background="#40444b", foreground="white",
                                   lmargin1=15, lmargin2=15, rmargin=240, spacing1=4, spacing3=4)
         self.chat_area.tag_config("system", justify="center", foreground="#b9bbbe", spacing1=6, spacing3=6)
+        self.chat_area.tag_config("file_link", foreground="#00aff4", underline=True)
 
-        # =========================
         # INPUT AREA
-        # =========================
         bottom = tk.Frame(right, bg="#2f3136")
         bottom.pack(fill=tk.X, padx=10, pady=(0, 10))
 
-        self.entry_border = tk.Frame(bottom, bg="#40444b", padx=2, pady=2)
+        # File attachment label
+        self.file_label = tk.Label(bottom, text="", bg="#2f3136", fg="#f9e2af",
+                                   font=("Segoe UI", 9))
+        self.file_label.pack(fill=tk.X, pady=(0, 5))
+
+        input_row = tk.Frame(bottom, bg="#2f3136")
+        input_row.pack(fill=tk.X)
+
+        # Attach button
+        tk.Button(
+            input_row,
+            text="📎",
+            width=3,
+            command=self.attach_file,
+            bg="#40444b",
+            fg="white",
+            relief=tk.FLAT,
+            font=("Segoe UI", 12),
+            cursor="hand2",
+        ).pack(side=tk.LEFT, padx=(0, 8))
+
+        self.entry_border = tk.Frame(input_row, bg="#40444b", padx=2, pady=2)
         self.entry_border.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 8))
 
         self.entry = tk.Entry(
@@ -110,7 +129,6 @@ class ChatUI:
         )
         self.entry.pack(fill=tk.X, padx=10, pady=8)
 
-        # placeholder
         self.entry.insert(0, self._placeholder_text)
         self.entry.config(fg="#9ca3af")
 
@@ -132,7 +150,7 @@ class ChatUI:
         self.entry.bind("<Return>", self.send_message)
 
         tk.Button(
-            bottom,
+            input_row,
             text="Send",
             width=10,
             command=self.send_message,
@@ -150,6 +168,31 @@ class ChatUI:
 
         self.root.protocol("WM_DELETE_WINDOW", self.on_close)
         self.root.mainloop()
+
+    # ===== File handling =====
+    def attach_file(self):
+        file_path = filedialog.askopenfilename(
+            title="Chọn file để gửi",
+            filetypes=[
+                ("Ảnh", "*.png;*.jpg;*.jpeg;*.gif;*.bmp"),
+                ("Tất cả files", "*.*")
+            ]
+        )
+        if file_path:
+            file_size = os.path.getsize(file_path)
+            if file_size > 5 * 1024 * 1024:
+                messagebox.showerror("Lỗi", "File quá lớn (max 5MB)")
+                return
+            
+            self.attached_file = file_path
+            file_name = os.path.basename(file_path)
+            self.file_label.config(text=f"📎 {file_name} - Click để hủy")
+            self.file_label.bind("<Button-1>", lambda e: self.clear_attachment())
+
+    def clear_attachment(self):
+        self.attached_file = None
+        self.file_label.config(text="")
+        self.file_label.unbind("<Button-1>")
 
     # ===== helpers =====
     def _key_dm(self, other: str) -> str:
@@ -176,6 +219,75 @@ class ChatUI:
         self.chat_area.config(state="disabled")
         self.chat_area.yview(tk.END)
 
+    def _display_file_live(self, file_data: dict, sender: str, timestamp: str, tag: str):
+        """Hiển thị file TRỰC TIẾP trong chat area - KHÔNG tự động lưu"""
+        file_name = file_data.get("name", "unknown")
+        file_type = file_data.get("type", "")
+        file_size = file_data.get("size", 0)
+        
+        size_kb = file_size / 1024
+        size_text = f"{size_kb:.1f}KB" if size_kb < 1024 else f"{size_kb/1024:.1f}MB"
+        
+        self.chat_area.config(state="normal")
+        
+        # Hiển thị thông tin file
+        info_text = f"  [{timestamp}] {sender} đã gửi: {file_name} ({size_text})  \n"
+        self.chat_area.insert(tk.END, info_text, tag)
+        
+        if file_type.startswith("image/"):
+            # Hiển thị preview ảnh (không lưu file)
+            try:
+                from protocol import get_file_preview_data
+                from io import BytesIO
+                
+                img_bytes = get_file_preview_data(file_data)
+                if img_bytes:
+                    img = Image.open(BytesIO(img_bytes))
+                    img.thumbnail((250, 250))
+                    photo = ImageTk.PhotoImage(img)
+                    
+                    label = tk.Label(self.chat_area, image=photo, bg="#36393f", cursor="hand2")
+                    label.image = photo  # Keep reference
+                    # Click để lưu ảnh
+                    label.bind("<Button-1>", lambda e, fd=file_data: self._save_file_on_click(fd))
+                    
+                    self.chat_area.window_create(tk.END, window=label)
+                    self.chat_area.insert(tk.END, "\n")
+            except Exception as e:
+                self.chat_area.insert(tk.END, f"  ⚠️ Không thể hiển thị ảnh: {e}  \n", "system")
+        
+        # Tạo nút Download
+        download_btn = tk.Button(
+            self.chat_area,
+            text=f"💾 Tải xuống {file_name}",
+            command=lambda fd=file_data: self._save_file_on_click(fd),
+            bg="#5865f2",
+            fg="white",
+            relief=tk.FLAT,
+            cursor="hand2",
+            font=("Segoe UI", 9)
+        )
+        self.chat_area.window_create(tk.END, window=download_btn)
+        self.chat_area.insert(tk.END, "\n")
+        
+        self.chat_area.config(state="disabled")
+        self.chat_area.yview(tk.END)
+
+    def _save_file_on_click(self, file_data: dict):
+        """Lưu file khi user click"""
+        from protocol import decode_file
+        
+        saved_path = decode_file(file_data)
+        if saved_path:
+            messagebox.showinfo("Thành công", f"Đã lưu file:\n{saved_path}")
+            # Mở file sau khi lưu (tùy chọn)
+            try:
+                os.startfile(saved_path)
+            except:
+                pass
+        else:
+            messagebox.showerror("Lỗi", "Không thể lưu file")
+
     # ===== UI events =====
     def on_select_user(self, event=None):
         sel = self.user_list.curselection()
@@ -185,7 +297,6 @@ class ChatUI:
         if u == self.username:
             return
 
-        # ✅ CHỌN USER => TẮT CHAT PHÒNG
         self.selected_room = None
         self.room_label.config(text="Phòng đang chọn: (chưa chọn)")
         self.header.config(text=f"CHAT RIÊNG với: {u}")
@@ -200,7 +311,6 @@ class ChatUI:
             return
         room = self.room_list.get(sel[0]).split(" (", 1)[0].strip()
 
-        # ✅ CHỌN ROOM => TẮT CHAT RIÊNG
         self.dm_target = None
         self.dm_label.config(text="Đang chat với: (chưa chọn)")
 
@@ -212,24 +322,33 @@ class ChatUI:
 
     def send_message(self, event=None):
         msg = self.entry.get().strip()
-
-        if (not msg) or (msg == self._placeholder_text):
+        
+        if (not msg or msg == self._placeholder_text) and not self.attached_file:
             return
 
-        # ✅ ƯU TIÊN THEO CONTEXT:
-        # Nếu đang chọn room => gửi group (không bị dm_target cũ phá nữa)
+        if msg == self._placeholder_text:
+            msg = ""
+
+        # Gửi theo context
         if self.selected_room:
             if self.selected_room not in self.joined_rooms:
                 messagebox.showwarning("Chưa join", "Bạn phải Join phòng trước khi gửi tin nhắn.")
                 return
-            self.network.send_group(self.username, self.selected_room, msg)
+            success = self.network.send_group(self.username, self.selected_room, msg, self.attached_file)
+            if not success:
+                messagebox.showerror("Lỗi", "Không thể gửi tin nhắn. Kiểm tra kết nối.")
+                return
             self.entry.delete(0, tk.END)
+            self.clear_attachment()
             return
 
-        # Nếu không chọn room thì mới chat riêng
         if self.dm_target:
-            self.network.send_private(self.username, self.dm_target, msg)
+            success = self.network.send_private(self.username, self.dm_target, msg, self.attached_file)
+            if not success:
+                messagebox.showerror("Lỗi", "Không thể gửi tin nhắn. Kiểm tra kết nối.")
+                return
             self.entry.delete(0, tk.END)
+            self.clear_attachment()
             return
 
         messagebox.showinfo("Chưa chọn", "Hãy chọn user để chat riêng hoặc chọn phòng để chat nhóm.")
@@ -288,7 +407,6 @@ class ChatUI:
             msg = data.get("msg", "")
             text = f"🔔 {msg}"
 
-            # Server chưa gửi room => UI tự parse từ msg: "... phòng 'G1'"
             m = re.search(r"phòng\s+'([^']+)'", msg)
             room = data.get("room") or (m.group(1) if m else None)
 
@@ -299,7 +417,6 @@ class ChatUI:
                     self._append_chat_live(text, "system")
                 return
 
-            # system chung
             self._append_hist("SYSTEM", text, "system")
             self._append_chat_live(text, "system")
             return
@@ -313,18 +430,29 @@ class ChatUI:
             to_user = data.get("to")
             msg = data.get("msg", "")
             ts = data.get("timestamp", "")
+            file_data = data.get("file")
 
             other = sender if sender != self.username else to_user
             if not other:
                 return
 
             key = self._key_dm(other)
-            text = f"  [{ts}] {sender}: {msg}  "
             tag = "self" if sender == self.username else "other"
-            self._append_hist(key, text, tag)
-
-            if self.dm_target == other:
-                self._append_chat_live(text, tag)
+            
+            # Hiển thị file nếu có VÀ đang ở conversation này
+            if file_data and self.dm_target == other:
+                self._display_file_live(file_data, sender, ts, tag)
+            
+            # Lưu vào history (text only)
+            if file_data:
+                self._append_hist(key, f"  [{ts}] {sender}: [📎 {file_data.get('name')}]  ", tag)
+            
+            # Hiển thị text message
+            if msg:
+                text = f"  [{ts}] {sender}: {msg}  "
+                self._append_hist(key, text, tag)
+                if self.dm_target == other:
+                    self._append_chat_live(text, tag)
             return
 
         if t == "group":
@@ -332,17 +460,28 @@ class ChatUI:
             sender = data.get("from")
             msg = data.get("msg", "")
             ts = data.get("timestamp", "")
+            file_data = data.get("file")
 
             if not room:
                 return
 
             key = self._key_room(room)
-            text = f"  [{ts}] ({room}) {sender}: {msg}  "
             tag = "self" if sender == self.username else "other"
-            self._append_hist(key, text, tag)
-
-            if self.selected_room == room:
-                self._append_chat_live(text, tag)
+            
+            # Hiển thị file nếu có VÀ đang ở room này
+            if file_data and self.selected_room == room:
+                self._display_file_live(file_data, sender, ts, tag)
+            
+            # Lưu vào history (text only)
+            if file_data:
+                self._append_hist(key, f"  [{ts}] ({room}) {sender}: [📎 {file_data.get('name')}]  ", tag)
+            
+            # Hiển thị text message
+            if msg:
+                text = f"  [{ts}] ({room}) {sender}: {msg}  "
+                self._append_hist(key, text, tag)
+                if self.selected_room == room:
+                    self._append_chat_live(text, tag)
             return
 
     def on_disconnect(self):

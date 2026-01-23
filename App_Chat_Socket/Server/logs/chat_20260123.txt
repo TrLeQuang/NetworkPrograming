@@ -1,0 +1,63 @@
+[2026-01-23 16:16:15] [INFO] Server đã khởi động tại 0.0.0.0:5555
+[2026-01-23 16:16:44] [INFO] Khoa1 login từ ('127.0.0.1', 57268)
+[2026-01-23 16:17:19] [INFO] Khoa2 login từ ('127.0.0.1', 57272)
+[2026-01-23 16:17:35] [PRIVATE] Khoa2 -> Khoa1: Hello
+[2026-01-23 16:17:40] [PRIVATE] Khoa1 -> Khoa2: Hi
+[2026-01-23 16:17:45] [PRIVATE] Khoa1 -> Khoa2: 
+[2026-01-23 16:18:04] [PRIVATE] Khoa1 -> Khoa2: do you like dragon ball
+[2026-01-23 16:18:22] [PRIVATE] Khoa2 -> Khoa1: oh I like it
+[2026-01-23 16:18:32] [PRIVATE] Khoa2 -> Khoa1: 
+[2026-01-23 16:19:02] [INFO] Khoa2 logout
+[2026-01-23 16:19:02] [INFO] Khoa2 logout
+[2026-01-23 16:19:03] [INFO] Khoa1 logout
+[2026-01-23 16:19:03] [INFO] Khoa1 logout
+[2026-01-23 16:24:40] [INFO] Server đã khởi động tại 0.0.0.0:5555
+[2026-01-23 16:25:17] [INFO] khoa login từ ('127.0.0.1', 53203)
+[2026-01-23 16:25:22] [INFO] khoa2 login từ ('127.0.0.1', 53205)
+[2026-01-23 16:25:50] [PRIVATE] khoa -> khoa2: 
+[2026-01-23 16:26:17] [INFO] khoa2 logout
+[2026-01-23 16:26:17] [INFO] khoa2 logout
+[2026-01-23 16:26:18] [INFO] khoa logout
+[2026-01-23 16:26:18] [INFO] khoa logout
+[2026-01-23 16:30:33] [INFO] Server đã khởi động tại 0.0.0.0:5555
+[2026-01-23 16:30:55] [INFO] Khoa login từ ('127.0.0.1', 61808)
+[2026-01-23 16:31:03] [INFO] Khoa2 login từ ('127.0.0.1', 61809)
+[2026-01-23 16:31:18] [PRIVATE] Khoa -> Khoa2:  [FILE: test4mb.txt]
+[2026-01-23 16:31:49] [PRIVATE] Khoa2 -> Khoa:  [FILE: 2006494.webp]
+[2026-01-23 16:32:14] [PRIVATE] Khoa -> Khoa2:  [FILE: test4mb.txt]
+[2026-01-23 16:32:27] [ROOM] Khoa tạo phòng 'Yasua'
+[2026-01-23 16:32:32] [ROOM] Khoa join phòng 'Yasua'
+[2026-01-23 16:32:34] [ROOM] Khoa2 join phòng 'Yasua'
+[2026-01-23 16:32:43] [GROUP] [Yasua] Khoa:  [FILE: test4mb.txt]
+[2026-01-23 16:32:52] [GROUP] [Yasua] Khoa2:  [FILE: akatsuki-anime_1920x1080.jpg]
+[2026-01-23 16:33:21] [INFO] Khoa2 logout
+[2026-01-23 16:33:21] [INFO] Khoa2 logout
+[2026-01-23 16:33:22] [INFO] Khoa logout
+[2026-01-23 16:33:22] [INFO] Khoa logout
+[2026-01-23 16:34:41] [INFO] Server đã khởi động tại 0.0.0.0:5555
+[2026-01-23 16:34:51] [INFO] Khoa1 login từ ('127.0.0.1', 49686)
+[2026-01-23 16:34:58] [INFO] Khoa2 login từ ('127.0.0.1', 49688)
+[2026-01-23 16:35:17] [PRIVATE] Khoa2 -> Khoa1:  [FILE: 651897.png]
+[2026-01-23 16:35:36] [INFO] Khoa1 logout
+[2026-01-23 16:35:36] [INFO] Khoa1 logout
+[2026-01-23 16:35:39] [INFO] Khoa2 logout
+[2026-01-23 16:35:39] [INFO] Khoa2 logout
+[2026-01-23 16:36:00] [INFO] A login từ ('127.0.0.1', 54457)
+[2026-01-23 16:36:03] [INFO] B login từ ('127.0.0.1', 54458)
+[2026-01-23 16:36:07] [INFO] C login từ ('127.0.0.1', 54459)
+[2026-01-23 16:36:25] [PRIVATE] B -> A:  [FILE: 651897.png]
+[2026-01-23 16:36:31] [INFO] A logout
+[2026-01-23 16:36:31] [INFO] A logout
+[2026-01-23 16:36:32] [INFO] B logout
+[2026-01-23 16:36:32] [INFO] B logout
+[2026-01-23 16:36:34] [INFO] C logout
+[2026-01-23 16:36:34] [INFO] C logout
+[2026-01-23 16:45:09] [INFO] Server khởi động tại 0.0.0.0:5555
+[2026-01-23 16:45:47] [INFO] Khoa1 login từ ('127.0.0.1', 59591)
+[2026-01-23 16:45:53] [INFO] Khoa2 login từ ('127.0.0.1', 59592)
+[2026-01-23 16:46:04] [PRIVATE] Khoa2 → Khoa1:  [📎 651897.png]
+[2026-01-23 16:46:20] [INFO] Khoa1 logout
+[2026-01-23 16:46:20] [INFO] Khoa1 logout
+[2026-01-23 16:46:26] [INFO] Khoa2 logout
+[2026-01-23 16:46:26] [INFO] Khoa2 logout
+[2026-01-23 16:46:38] [INFO] Server đã tắt
