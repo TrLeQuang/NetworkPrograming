@@ -10,7 +10,6 @@ using RockPaperScissorsServer.Network;
 using RockPaperScissorsServer.Matchmaking;
 using RockPaperScissorsServer.Game;
 using RockPaperScissorsServer.Protocol;
-using System.Reflection.Emit;
 
 namespace RockPaperScissorsServer.UI
 {
@@ -25,7 +24,7 @@ namespace RockPaperScissorsServer.UI
 		private TextBox txtLog;
 		private Button btnStart;
 		private Button btnStop;
-		private Label lblStatus;
+        private Label lblStatus;
 		private Label lblPlayerCount;
 
 		public ServerForm()

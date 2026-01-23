@@ -1,15 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GameRock_Paper_Scissors_Server
+using System.Windows.Forms;
+using RockPaperScissorsServer.UI;
+namespace RockPaperScissorsServer
 {
-	internal class Program
-	{
-		static void Main(string[] args)
-		{
-		}
-	}
+    static class Program
+    {
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new ServerForm());
+        }
+    }
 }

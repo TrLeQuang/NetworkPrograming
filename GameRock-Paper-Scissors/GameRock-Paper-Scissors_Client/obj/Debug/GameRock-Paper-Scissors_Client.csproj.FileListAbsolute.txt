@@ -1,0 +1,8 @@
+D:\Lập trình mạng\NetworkPrograming\GameRock-Paper-Scissors\GameRock-Paper-Scissors_Client\obj\Debug\GameRock-Paper-Scissors_Client.csproj.AssemblyReference.cache
+D:\Lập trình mạng\NetworkPrograming\GameRock-Paper-Scissors\GameRock-Paper-Scissors_Client\obj\Debug\GameRock-Paper-Scissors_Client.csproj.CoreCompileInputs.cache
+D:\Lập trình mạng\NetworkPrograming\GameRock-Paper-Scissors\GameRock-Paper-Scissors_Client\bin\Debug\GameRock-Paper-Scissors_Client.exe.config
+D:\Lập trình mạng\NetworkPrograming\GameRock-Paper-Scissors\GameRock-Paper-Scissors_Client\bin\Debug\GameRock-Paper-Scissors_Client.exe
+D:\Lập trình mạng\NetworkPrograming\GameRock-Paper-Scissors\GameRock-Paper-Scissors_Client\bin\Debug\GameRock-Paper-Scissors_Client.pdb
+D:\Lập trình mạng\NetworkPrograming\GameRock-Paper-Scissors\GameRock-Paper-Scissors_Client\obj\Debug\GameRock-Paper-Scissors_Client.exe
+D:\Lập trình mạng\NetworkPrograming\GameRock-Paper-Scissors\GameRock-Paper-Scissors_Client\obj\Debug\GameRock-Paper-Scissors_Client.pdb
+D:\Lập trình mạng\NetworkPrograming\GameRock-Paper-Scissors\GameRock-Paper-Scissors_Client\obj\Debug\GameRock-Paper-Scissors_Client.exe.config

@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
 using RockPaperScissorsClient.Network;
 using RockPaperScissorsClient.Game;
 using RockPaperScissorsClient.Protocol;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace RockPaperScissorsClient.UI
 {
