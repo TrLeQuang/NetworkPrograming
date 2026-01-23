@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4126A937-AA70-42FF-9C35-AA110B84B4D6}</ProjectGuid>
+    <ProjectGuid>{76116662-08ED-4E08-80E7-7940147A7445}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Game_Rock_Paper_Scissors</RootNamespace>
-    <AssemblyName>Game Rock-Paper-Scissors</AssemblyName>
+    <RootNamespace>RockPaperScissorsServer</RootNamespace>
+    <AssemblyName>RockPaperScissorsServer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,8 +50,8 @@
     <Compile Include="Matchmaking\Matchmaker.cs" />
     <Compile Include="Network\ClientHandler.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Protocol\ProtocolMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protocol\ProtocolMessage.cs" />
     <Compile Include="UI\ServerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +77,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

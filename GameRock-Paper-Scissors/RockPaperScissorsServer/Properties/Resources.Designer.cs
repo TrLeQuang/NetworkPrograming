@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Game_Rock_Paper_Scissors.Properties
+namespace RockPaperScissorsServer.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace Game_Rock_Paper_Scissors.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Game_Rock_Paper_Scissors.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RockPaperScissorsServer.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

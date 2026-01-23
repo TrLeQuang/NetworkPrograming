@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Game_Rock_Paper_Scissors.Properties
+namespace RockPaperScissorsServer.Properties
 {
 
 
