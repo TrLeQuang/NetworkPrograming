@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "GameRock-Paper-Scissors_Server\\GameRock-Paper-Scissors_Server.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "GameRock-Paper-Scissors_Client\\GameRock-Paper-Scissors_Client.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

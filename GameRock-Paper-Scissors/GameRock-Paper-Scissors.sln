@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameRock-Paper-Scissors_Server", "GameRock-Paper-Scissors_Server\GameRock-Paper-Scissors_Server.csproj", "{F025B212-44B9-4A3B-AACD-84593D5D4FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameRock-Paper-Scissors_Client", "GameRock-Paper-Scissors_Client\GameRock-Paper-Scissors_Client.csproj", "{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Debug|x64.Build.0 = Debug|Any CPU
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Debug|x86.Build.0 = Debug|Any CPU
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Release|x64.ActiveCfg = Release|Any CPU
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Release|x64.Build.0 = Release|Any CPU
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Release|x86.ActiveCfg = Release|Any CPU
+		{F025B212-44B9-4A3B-AACD-84593D5D4FE3}.Release|x86.Build.0 = Release|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Debug|x64.Build.0 = Debug|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Debug|x86.Build.0 = Debug|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Release|x64.ActiveCfg = Release|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Release|x64.Build.0 = Release|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED645AFD-9387-4CAB-9ABF-6E26F39E1AF3}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
