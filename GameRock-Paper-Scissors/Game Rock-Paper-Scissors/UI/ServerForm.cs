@@ -4,18 +4,23 @@ using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
 using System.Threading;
 using System.Windows.Forms;
+using RockPaperScissorsServer.Network;
+using RockPaperScissorsServer.Matchmaking;
+using RockPaperScissorsServer.Game;
+using RockPaperScissorsServer.Protocol;
 
-namespace RockPaperScissorsServer
+namespace RockPaperScissorsServer.UI
 {
-    public partial class ServerForm : Form
+    public partial class ServerForm : Form, IServerService
     {
         private TcpListener server;
         private List<ClientHandler> clients = new List<ClientHandler>();
-        private List<GamePair> gamePairs = new List<GamePair>();
+        private Matchmaker matchmaker = new Matchmaker();
         private bool isRunning = false;
+
+        // UI Controls
         private TextBox txtLog;
         private Button btnStart;
         private Button btnStop;
@@ -130,8 +135,9 @@ namespace RockPaperScissorsServer
             {
                 client.Disconnect();
             }
+
             clients.Clear();
-            gamePairs.Clear();
+            matchmaker.Clear();
 
             UpdateStatus("Server Status: Stopped", Color.Red);
             UpdatePlayerCount();
@@ -157,60 +163,40 @@ namespace RockPaperScissorsServer
                     LogMessage($"→ New client connected (ID: {handler.ClientId})");
 
                     // Tự động ghép cặp với client đang chờ
-                    TryPairClients(handler);
+                    bool paired = matchmaker.TryPairClient(handler, clients);
+
+                    if (paired)
+                    {
+                        var partner = handler.Partner;
+                        LogMessage($"🔗 Paired: Player {partner.ClientId} ↔ Player {handler.ClientId}");
+                    }
+                    else
+                    {
+                        LogMessage($"⏳ Player {handler.ClientId} is waiting for a partner...");
+                    }
 
                     UpdatePlayerCount();
                     BroadcastPlayerCount();
                 }
-                catch { }
-            }
-        }
-
-        private void TryPairClients(ClientHandler newClient)
-        {
-            // Tìm client đang chờ ghép cặp (chưa có partner)
-            var waitingClient = clients.FirstOrDefault(c => c != newClient && c.Partner == null);
-
-            if (waitingClient != null)
-            {
-                // Ghép cặp hai client
-                GamePair pair = new GamePair(waitingClient, newClient);
-                gamePairs.Add(pair);
-
-                waitingClient.Partner = newClient;
-                newClient.Partner = waitingClient;
-
-                waitingClient.SendMessage("OPPONENT_STATUS|PAIRED");
-                newClient.SendMessage("OPPONENT_STATUS|PAIRED");
-
-                LogMessage($"🔗 Paired: Player {waitingClient.ClientId} ↔ Player {newClient.ClientId}");
-            }
-            else
-            {
-                // Không có ai chờ, client này sẽ chờ người tiếp theo
-                newClient.SendMessage("WAITING|Waiting for another player to join...");
-                LogMessage($"⏳ Player {newClient.ClientId} is waiting for a partner...");
+                catch (Exception ex)
+                {
+                    if (isRunning)
+                    {
+                        LogMessage($"⚠ Error accepting client: {ex.Message}");
+                    }
+                }
             }
         }
 
         public void RemoveClient(ClientHandler client)
         {
             clients.Remove(client);
+            matchmaker.RemovePair(client);
 
-            // Xóa cặp game nếu có
-            var pair = gamePairs.FirstOrDefault(p => p.Player1 == client || p.Player2 == client);
-            if (pair != null)
+            var partner = client.Partner;
+            if (partner != null)
             {
-                gamePairs.Remove(pair);
-
-                // Thông báo cho partner rằng đối thủ đã disconnect
-                var partner = client.Partner;
-                if (partner != null)
-                {
-                    partner.Partner = null;
-                    partner.SendMessage("OPPONENT_STATUS|DISCONNECTED");
-                    LogMessage($"⚠ Player {partner.ClientId}'s opponent disconnected");
-                }
+                LogMessage($"⚠ Player {partner.ClientId}'s opponent disconnected");
             }
 
             LogMessage($"← Client disconnected (ID: {client.ClientId})");
@@ -222,8 +208,15 @@ namespace RockPaperScissorsServer
         {
             if (player.Partner == null)
             {
-                player.SendMessage("WAITING|You don't have a partner yet. Waiting for another player...");
+                player.SendMessage(ProtocolMessage.Builder.Waiting(
+                    "You don't have a partner yet. Waiting for another player..."));
                 LogMessage($"⚠ Player {player.ClientId} tried to play without a partner");
+                return;
+            }
+
+            if (!GameLogic.IsValidChoice(choice))
+            {
+                LogMessage($"⚠ Player {player.ClientId} sent invalid choice: {choice}");
                 return;
             }
 
@@ -242,11 +235,11 @@ namespace RockPaperScissorsServer
                 string choice1 = player.CurrentChoice;
                 string choice2 = partner.CurrentChoice;
 
-                string result1 = DetermineWinner(choice1, choice2);
-                string result2 = GetOppositeResult(result1);
+                string result1 = GameLogic.DetermineWinner(choice1, choice2);
+                string result2 = GameLogic.GetOppositeResult(result1);
 
-                player.SendMessage($"RESULT|{result1}|You: {choice1}, Opponent: {choice2}");
-                partner.SendMessage($"RESULT|{result2}|You: {choice2}, Opponent: {choice1}");
+                player.SendMessage(ProtocolMessage.Builder.Result(result1, choice1, choice2));
+                partner.SendMessage(ProtocolMessage.Builder.Result(result2, choice2, choice1));
 
                 LogMessage($"⚔ Game: Player {player.ClientId} ({choice1}) vs Player {partner.ClientId} ({choice2}) → Result: {result1}/{result2}");
 
@@ -259,36 +252,20 @@ namespace RockPaperScissorsServer
             else
             {
                 // Partner chưa chọn, thông báo đợi
-                player.SendMessage("WAITING|Waiting for your opponent to make a choice...");
-                partner.SendMessage("OPPONENT_STATUS|WAITING");
+                player.SendMessage(ProtocolMessage.Builder.Waiting(
+                    "Waiting for your opponent to make a choice..."));
+                partner.SendMessage(ProtocolMessage.Builder.OpponentStatus(ProtocolMessage.STATUS_WAITING));
                 LogMessage($"⏳ Player {player.ClientId} is waiting for Player {partner.ClientId}");
             }
         }
 
         private void BroadcastPlayerCount()
         {
-            string message = $"PLAYER_COUNT|{clients.Count}";
+            string message = ProtocolMessage.Builder.PlayerCount(clients.Count);
             foreach (var client in clients.ToList())
             {
                 client.SendMessage(message);
             }
-        }
-
-        private string DetermineWinner(string choice1, string choice2)
-        {
-            if (choice1 == choice2) return "DRAW";
-            if ((choice1 == "ROCK" && choice2 == "SCISSORS") ||
-                (choice1 == "PAPER" && choice2 == "ROCK") ||
-                (choice1 == "SCISSORS" && choice2 == "PAPER"))
-                return "WIN";
-            return "LOSE";
-        }
-
-        private string GetOppositeResult(string result)
-        {
-            if (result == "WIN") return "LOSE";
-            if (result == "LOSE") return "WIN";
-            return "DRAW";
         }
 
         public void LogMessage(string message)
@@ -324,7 +301,7 @@ namespace RockPaperScissorsServer
             }
             else
             {
-                lblPlayerCount.Text = $"Connected Players: {clients.Count} (Pairs: {gamePairs.Count})";
+                lblPlayerCount.Text = $"Connected Players: {clients.Count} (Pairs: {matchmaker.PairCount})";
             }
         }
 
@@ -335,107 +312,6 @@ namespace RockPaperScissorsServer
                 BtnStop_Click(null, null);
             }
             base.OnFormClosing(e);
-        }
-    }
-
-    public class GamePair
-    {
-        public ClientHandler Player1 { get; set; }
-        public ClientHandler Player2 { get; set; }
-
-        public GamePair(ClientHandler player1, ClientHandler player2)
-        {
-            Player1 = player1;
-            Player2 = player2;
-        }
-    }
-
-    public class ClientHandler
-    {
-        private TcpClient client;
-        private NetworkStream stream;
-        private ServerForm server;
-        public ClientHandler Partner { get; set; }
-        public bool HasMadeChoice { get; set; }
-        public string CurrentChoice { get; set; }
-        public string ClientId { get; private set; }
-        private static int clientCounter = 0;
-        private UI.ServerForm serverForm;
-
-        public ClientHandler(TcpClient client, ServerForm server)
-        {
-            this.client = client;
-            this.server = server;
-            this.stream = client.GetStream();
-            this.Partner = null;
-            this.HasMadeChoice = false;
-            this.CurrentChoice = null;
-            this.ClientId = $"C{++clientCounter}";
-        }
-
-        public ClientHandler(TcpClient client, Game_Rock_Paper_Scissors.ServerForm serverForm)
-        {
-            this.client = client;
-        }
-
-        public ClientHandler(TcpClient client, UI.ServerForm serverForm)
-        {
-            this.client = client;
-            this.serverForm = serverForm;
-        }
-
-        public void Handle()
-        {
-            try
-            {
-                byte[] buffer = new byte[1024];
-                while (true)
-                {
-                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                    if (bytesRead == 0) break;
-
-                    string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-
-                    if (message.StartsWith("PLAY|"))
-                    {
-                        string choice = message.Split('|')[1];
-                        server.ProcessGame(this, choice);
-                    }
-                }
-            }
-            catch { }
-            finally
-            {
-                Disconnect();
-            }
-        }
-
-        public void SendMessage(string message)
-        {
-            try
-            {
-                byte[] data = Encoding.UTF8.GetBytes(message);
-                stream.Write(data, 0, data.Length);
-            }
-            catch { }
-        }
-
-        public void Disconnect()
-        {
-            stream?.Close();
-            client?.Close();
-            server.RemoveClient(this);
-        }
-    }
-
-    static class Program
-    {
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ServerForm());
         }
     }
 }

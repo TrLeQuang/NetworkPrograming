@@ -5,10 +5,6 @@
       {
         "Path": "RockPaperScissorsClient\\RockPaperScissorsClient.csproj",
         "Action": "Start"
-      },
-      {
-        "Path": "Game Rock-Paper-Scissors\\RockPaperScissorsServer.csproj",
-        "Action": "Start"
       }
     ]
   }

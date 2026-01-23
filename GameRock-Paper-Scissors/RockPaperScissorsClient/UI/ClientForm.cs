@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Drawing;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading;
 using System.Windows.Forms;
+using RockPaperScissorsClient.Network;
+using RockPaperScissorsClient.Game;
+using RockPaperScissorsClient.Protocol;
 
-namespace RockPaperScissorsClient
+namespace RockPaperScissorsClient.UI
 {
-    public partial class ClientForm : Form
+    public partial class ClientForm : Form, IClientMessageHandler
     {
-        private TcpClient client;
-        private NetworkStream stream;
+        private ClientConnection connection;
+        private GameState gameState;
+
+        // UI Controls
         private TextBox txtServer;
         private Button btnConnect;
         private Button btnDisconnect;
@@ -22,10 +24,11 @@ namespace RockPaperScissorsClient
         private Label lblPlayerCount;
         private Label lblOpponentStatus;
         private TextBox txtLog;
-        private bool isConnected = false;
 
         public ClientForm()
         {
+            gameState = new GameState();
+            connection = new ClientConnection(this);
             InitializeComponent();
         }
 
@@ -137,7 +140,7 @@ namespace RockPaperScissorsClient
                 BackColor = Color.LightBlue,
                 Enabled = false
             };
-            btnRock.Click += (s, e) => MakeChoice("ROCK");
+            btnRock.Click += (s, e) => MakeChoice(ProtocolMessage.CHOICE_ROCK);
 
             btnPaper = new Button
             {
@@ -148,7 +151,7 @@ namespace RockPaperScissorsClient
                 BackColor = Color.LightGreen,
                 Enabled = false
             };
-            btnPaper.Click += (s, e) => MakeChoice("PAPER");
+            btnPaper.Click += (s, e) => MakeChoice(ProtocolMessage.CHOICE_PAPER);
 
             btnScissors = new Button
             {
@@ -159,7 +162,7 @@ namespace RockPaperScissorsClient
                 BackColor = Color.LightCoral,
                 Enabled = false
             };
-            btnScissors.Click += (s, e) => MakeChoice("SCISSORS");
+            btnScissors.Click += (s, e) => MakeChoice(ProtocolMessage.CHOICE_SCISSORS);
 
             gamePanel.Controls.Add(lblChoose);
             gamePanel.Controls.Add(btnRock);
@@ -208,157 +211,93 @@ namespace RockPaperScissorsClient
 
         private void BtnConnect_Click(object sender, EventArgs e)
         {
-            try
+            if (connection.Connect(txtServer.Text, 5000))
             {
-                client = new TcpClient();
-                client.Connect(txtServer.Text, 5000);
-                stream = client.GetStream();
-                isConnected = true;
+                gameState.OnConnected();
 
                 UpdateStatus("Status: Connected", Color.Green);
                 btnConnect.Enabled = false;
                 btnDisconnect.Enabled = true;
-                btnRock.Enabled = true;
-                btnPaper.Enabled = true;
-                btnScissors.Enabled = true;
+                EnableGameButtons(true);
                 txtServer.Enabled = false;
-
-                Thread receiveThread = new Thread(ReceiveMessages);
-                receiveThread.IsBackground = true;
-                receiveThread.Start();
 
                 LogMessage("✓ Connected to server!");
                 UpdateResult("Ready to play! Choose your weapon.", Color.LightYellow);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Connection error: {ex.Message}", "Error");
             }
         }
 
         private void BtnDisconnect_Click(object sender, EventArgs e)
         {
-            DisconnectFromServer();
-        }
-
-        private void DisconnectFromServer()
-        {
-            isConnected = false;
-            stream?.Close();
-            client?.Close();
-
-            UpdateStatus("Status: Not Connected", Color.Red);
-            UpdatePlayerCount("Players Online: -");
-            UpdateOpponentStatus("Opponent: Waiting for connection...", Color.LightGray);
-            btnConnect.Enabled = true;
-            btnDisconnect.Enabled = false;
-            btnRock.Enabled = false;
-            btnPaper.Enabled = false;
-            btnScissors.Enabled = false;
-            txtServer.Enabled = true;
-            UpdateResult("Make your choice to start playing!", Color.White);
-
-            LogMessage("✗ Disconnected from server.");
+            connection.Disconnect();
         }
 
         private void MakeChoice(string choice)
         {
-            try
+            if (connection.SendChoice(choice))
             {
-                string message = $"PLAY|{choice}";
-                byte[] data = Encoding.UTF8.GetBytes(message);
-                stream.Write(data, 0, data.Length);
+                gameState.OnChoiceMade(choice);
 
-                btnRock.Enabled = false;
-                btnPaper.Enabled = false;
-                btnScissors.Enabled = false;
-
+                EnableGameButtons(false);
                 LogMessage($"→ You chose: {choice}");
                 UpdateResult($"Waiting for opponent...", Color.Orange);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error sending choice: {ex.Message}");
-            }
         }
 
-        private void ReceiveMessages()
+        // IClientMessageHandler Implementation
+        public void OnMessageReceived(string message)
         {
-            byte[] buffer = new byte[1024];
-            while (isConnected)
+            if (ProtocolMessage.Parser.TryParsePlayerCount(message, out int count))
             {
-                try
+                gameState.OnPlayerCountUpdate(count);
+                UpdatePlayerCount($"Players Online: {count}");
+
+                if (count >= 2)
                 {
-                    int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                    if (bytesRead == 0) break;
-
-                    string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
-                    ProcessServerMessage(message);
-                }
-                catch
-                {
-                    break;
-                }
-            }
-
-            if (isConnected)
-            {
-                DisconnectFromServer();
-            }
-        }
-
-        private void ProcessServerMessage(string message)
-        {
-            string[] parts = message.Split('|');
-
-            if (parts[0] == "PLAYER_COUNT")
-            {
-                int playerCount = int.Parse(parts[1]);
-                UpdatePlayerCount($"Players Online: {playerCount}");
-
-                if (playerCount >= 2)
-                {
-                    LogMessage($"⚡ {playerCount} players online - Ready to play!");
+                    LogMessage($"⚡ {count} players online - Ready to play!");
                 }
                 else
                 {
-                    LogMessage($"⏳ {playerCount} player online - Waiting for opponent...");
+                    LogMessage($"⏳ {count} player online - Waiting for opponent...");
                     UpdateOpponentStatus("Opponent: No one online yet", Color.LightYellow);
                 }
             }
-            else if (parts[0] == "OPPONENT_STATUS")
+            else if (ProtocolMessage.Parser.TryParseOpponentStatus(message, out string status))
             {
-                string status = parts[1];
-                if (status == "WAITING")
+                if (status == ProtocolMessage.STATUS_WAITING)
                 {
                     UpdateOpponentStatus("Opponent: Ready and waiting! ⚡", Color.LightGreen);
                     LogMessage("⚡ Opponent is ready! Make your move!");
                 }
-                else
+                else if (status == ProtocolMessage.STATUS_PAIRED)
                 {
+                    gameState.OnOpponentPaired();
                     UpdateOpponentStatus("Opponent: Available to play", Color.LightBlue);
+                    LogMessage("✓ Paired with an opponent!");
+                }
+                else if (status == ProtocolMessage.STATUS_DISCONNECTED)
+                {
+                    gameState.OnOpponentDisconnected();
+                    UpdateOpponentStatus("Opponent: Disconnected", Color.LightCoral);
+                    LogMessage("⚠ Opponent disconnected");
                 }
             }
-            else if (parts[0] == "WAITING")
+            else if (ProtocolMessage.Parser.TryParseWaiting(message, out string waitMessage))
             {
-                LogMessage(parts[1]);
+                LogMessage(waitMessage);
                 UpdateResult("⏳ Waiting for opponent to join...", Color.Orange);
                 UpdateOpponentStatus("Opponent: Waiting for player to join...", Color.LightYellow);
             }
-            else if (parts[0] == "RESULT")
+            else if (ProtocolMessage.Parser.TryParseResult(message, out string result, out string details))
             {
-                string result = parts[1];
-                string details = parts[2];
-
                 Color resultColor = Color.Gray;
                 string resultText = "";
 
-                if (result == "WIN")
+                if (result == ProtocolMessage.RESULT_WIN)
                 {
                     resultColor = Color.LightGreen;
                     resultText = "🎉 YOU WIN! 🎉";
                 }
-                else if (result == "LOSE")
+                else if (result == ProtocolMessage.RESULT_LOSE)
                 {
                     resultColor = Color.LightCoral;
                     resultText = "😞 YOU LOSE!";
@@ -373,22 +312,44 @@ namespace RockPaperScissorsClient
                 LogMessage($"⚔ Game Result: {resultText}");
                 LogMessage($"   Details: {details}");
 
-                EnableButtons();
+                EnableGameButtons(true);
                 UpdateOpponentStatus("Opponent: Available for another round", Color.LightBlue);
             }
         }
 
-        private void EnableButtons()
+        public void OnDisconnected()
+        {
+            gameState.OnDisconnected();
+
+            UpdateStatus("Status: Not Connected", Color.Red);
+            UpdatePlayerCount("Players Online: -");
+            UpdateOpponentStatus("Opponent: Waiting for connection...", Color.LightGray);
+            btnConnect.Enabled = true;
+            btnDisconnect.Enabled = false;
+            EnableGameButtons(false);
+            txtServer.Enabled = true;
+            UpdateResult("Make your choice to start playing!", Color.White);
+
+            LogMessage("✗ Disconnected from server.");
+        }
+
+        public void OnConnectionError(string error)
+        {
+            MessageBox.Show(error, "Error");
+        }
+
+        // UI Update Methods
+        private void EnableGameButtons(bool enabled)
         {
             if (btnRock.InvokeRequired)
             {
-                btnRock.Invoke(new Action(EnableButtons));
+                btnRock.Invoke(new Action(() => EnableGameButtons(enabled)));
             }
             else
             {
-                btnRock.Enabled = true;
-                btnPaper.Enabled = true;
-                btnScissors.Enabled = true;
+                btnRock.Enabled = enabled;
+                btnPaper.Enabled = enabled;
+                btnScissors.Enabled = enabled;
             }
         }
 
@@ -457,19 +418,8 @@ namespace RockPaperScissorsClient
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            DisconnectFromServer();
+            connection.Disconnect();
             base.OnFormClosing(e);
-        }
-    }
-
-    static class Client
-    {
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ClientForm());
         }
     }
 }
